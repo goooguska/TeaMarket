@@ -1,8 +1,27 @@
+@import 'mixins';
+@import 'variables.scss';
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
 .container {
 	max-width: 1200px;
 	width: 100%;
 	margin: 0 auto;
 }
-
+body{
+	font-family: "Rubik"
+}
+h2{
+	font-size: 42px;
+	// font-size: 3.5vw;
+	color: $font-color;
+	font-weight: 500;
+}
 .logo {
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
 }

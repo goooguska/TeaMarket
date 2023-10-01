@@ -1,0 +1,48 @@
+@import 'base.scss';
+.header-top {
+	display: flex;
+	align-items: end;
+}
+.header-top__telephone {
+	width: 135px;
+
+}
+.header-top__telephone-text {
+	color: #A7AED2;
+	font-size: $lowFont-size;
+
+
+}
+.header-top__telephone-number {
+	font-size: $lowFont-size;
+}
+.header-top__logo {
+}
+.logo {
+}
+.header-top__action {
+
+}
+.header-top__action-button {
+	@include button
+}
+.header-search {
+	display: flex;
+	margin: 0 auto;
+}
+.header-bottom {
+	margin-top: 17px;
+	@include flex-between
+
+}
+.header-bottom__menu {
+	@include menu
+}
+.header-bottom__menu-item {
+}
+.header-bottom__menu-action {
+
+}
+.header-bottom__menu-action-button {
+
+}

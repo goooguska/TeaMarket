@@ -1,6 +1,5 @@
 @import 'variables';
 
-
 @mixin menu {
 	display: flex;
 	font-size: $lowFont-size;
@@ -9,10 +8,41 @@
 @mixin flex-between{
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
+	ul{
+		display: flex;
+		justify-content: space-between;
+	}
 }
 @mixin button {
 	border-radius: 21px;
 	padding: 8.5px 20px;
 	box-shadow: 0px 0px 0px 1px rgba(192, 194, 203);
+}
+@mixin search {
+	margin-top: 27px;
+	display: flex;
+	justify-content: center;
+
+	input{
+		display: block;
+		max-width: 464px;
+  	padding: 11.5px 165px;
+  	color: #A7AED2;
+  	background-color: #F4F5FA;
+  	border-radius: 31px;
+		text-align: center;
+	}
+}
+@mixin bottomButton{
+	background-color: $primary-color;
+	color: $secondary-color;
+	border-radius: 10px;
+	padding:15px 40px;
+	span{
+		background-color: #74D69A;
+		color: $secondary-color;
+		padding:8px 14px;
+		border-radius: 10px;
+	}
 }

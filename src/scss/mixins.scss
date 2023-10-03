@@ -3,13 +3,12 @@
 @mixin menu {
 	display: flex;
 	font-size: $lowFont-size;
-
 }
-@mixin flex-between{
+@mixin flex-between {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	ul{
+	ul {
 		display: flex;
 		justify-content: space-between;
 	}
@@ -21,45 +20,59 @@
 }
 @mixin search {
 	margin-top: 27px;
-	
+
 	display: flex;
 	justify-content: center;
 
-	input{
+	input {
 		outline: none;
 		border: none;
 		display: block;
 		width: 100%;
 		max-width: 464px;
-  	padding: 11.5px 20px;
-  	color: #A7AED2;
-  	background-color: #F4F5FA;
-  	border-radius: 31px;
+		padding: 11.5px 20px;
+		color: #a7aed2;
+		background-color: #f4f5fa;
+		border-radius: 31px;
 		text-align: center;
 	}
 }
-@mixin flex-wrap{
+@mixin flex-wrap {
 	display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
-@mixin bottomButton{
-	
+@mixin dropdown {
+	display: none;
+	position: absolute;
+	background-color: #f4f5fa;
+	min-width: 160px;
+	bottom: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	a {
+		float: none;
+		color: $font-color;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+	}
+}
+@mixin bottomButton {
 	background-color: $primary-color;
 	color: $secondary-color;
 	border-radius: 10px;
 	padding: 15px 10px 15px 40px;
-	span{
-		background-color: #74D69A;
+	span {
+		background-color: #74d69a;
 		color: $secondary-color;
-		padding:8px 14px;
+		padding: 8px 14px;
 		border-radius: 10px;
 	}
 }
-@mixin burger{
+// @mixin burger{
 
-}
+// }
 // @mixin tabletAction{
 // 	display: flex;
 // 	height: 45px;

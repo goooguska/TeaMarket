@@ -8,7 +8,7 @@
 @mixin flex-between{
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 	ul{
 		display: flex;
 		justify-content: space-between;
@@ -21,24 +21,35 @@
 }
 @mixin search {
 	margin-top: 27px;
+	
 	display: flex;
 	justify-content: center;
 
 	input{
+		outline: none;
+		border: none;
 		display: block;
+		width: 100%;
 		max-width: 464px;
-  	padding: 11.5px 165px;
+  	padding: 11.5px 20px;
   	color: #A7AED2;
   	background-color: #F4F5FA;
   	border-radius: 31px;
 		text-align: center;
 	}
 }
+@mixin flex-wrap{
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
 @mixin bottomButton{
+	
 	background-color: $primary-color;
 	color: $secondary-color;
 	border-radius: 10px;
-	padding:15px 40px;
+	padding: 15px 10px 15px 40px;
 	span{
 		background-color: #74D69A;
 		color: $secondary-color;
@@ -46,3 +57,14 @@
 		border-radius: 10px;
 	}
 }
+@mixin burger{
+
+}
+// @mixin tabletAction{
+// 	display: flex;
+// 	height: 45px;
+// 	width: 45px;
+// 	background: url(/src/assets/icons/Cart.svg) no-repeat 10px ;
+// 	background: url(/src/assets/icons/Heart.svg) no-repeat 10px ;
+
+// }

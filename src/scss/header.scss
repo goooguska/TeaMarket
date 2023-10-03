@@ -2,8 +2,8 @@
 @import 'base.scss';
 .header-top {
 	display: flex;
-	align-items: end;
-	
+	align-items: center;
+	justify-content: space-around;
 }
 .header-top__telephone {
 	width: 200px;
@@ -23,19 +23,38 @@
 }
 .logo {
 }
-.header-top__action {
-
-}
+// .header-top__action {
+// 	@include flex-wrap;
+	
+// }
 .header-top__action-button {
 	@include button
+}
+.header-bottom__burger-menu,
+.header-nav__mobile,
+.header-nav__tablet{
+	display: none
 }
 .header-search {
 	@include search;
 
 }
-.header-search__field{
-	background: url(/src/assets/icons/Search.svg) no-repeat 185px 13px;
+// .header-search{
+// 	position: relative;
+
+// }
+// .header-search::before{
+// 	content: "";
+// 	position: absolute;
+// 	background: url('/src/assets/icons/Search.svg') no-repeat ;
+// 	height: 16px;
+// 	width: 16px;
+// 	top:  31%; 
+// 	left: 43%;
 	
+// }
+.header-search__field{
+	background: url(/src/assets/icons/Search.svg) no-repeat 35% ;
 }
 .header-bottom {
 	margin-top: 17px;
@@ -46,13 +65,22 @@
 	@include menu
 }
 .header-bottom__menu-item {
+	position: relative;
 	margin-right: 30px;
-	background: url(/src/assets/icons/DropDown.svg) no-repeat 50px ;
+}
+.header-bottom__menu-item::after{
+	content: "";
+  position: absolute;
+	height: 16px;
+	width: 16px;
+	background: url('/src/assets/icons/DropDown.svg') no-repeat ;
 }
 .header-bottom__menu-action {
+	@include flex-wrap;
 
 }
 .header-bottom__menu-action-buttonCart {
+	margin-right: 5px;
 	background: url(/src/assets/icons/Cart.svg) no-repeat 10px ;
 	@include bottomButton;
 
@@ -60,4 +88,80 @@
 .header-bottom__menu-action-buttonHeart{
 	background: url(/src/assets/icons/Heart.svg) no-repeat 10px ;
 	@include bottomButton;
+}
+@media screen and (max-device-width: 768px){
+	.header-bottom__burger-menu,
+	.header-nav__mobile,
+	.header-bottom__menu-action,
+	.header-top__telephone,
+	.header-top__action{
+		display: none; // Спросить как лучше (миксины или так)
+	}
+	.header-top{
+		display: flex;
+	}
+	.logo{
+		margin: 0 auto;
+		
+	}
+	.header-nav__tablet{
+		display: flex;
+		max-width: 210px;
+		align-items: center;
+		margin: 0 auto;
+		justify-content:space-around;
+		
+	}
+}
+@media screen and (max-device-width: 576px){
+	.header-nav__tablet{
+		display: none;
+	}
+	.header-nav__mobile{
+		display: flex;
+	}
+
+	.header-bottom__burger-menu{
+		display: inline;
+		width: 30px;
+		height: 30px;
+		position: relative;
+		z-index:2;
+		overflow: hidden;
+	}
+	.header-bottom__burger-menu span {
+		width: 30px;
+		height: 2px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: #222222;
+		transition: all 0.5s;
+	}
+	.header-bottom__burger-menu span:nth-of-type(2) {
+		top: calc(50% - 5px);
+	}
+	.header-bottom__burger-menu span:nth-of-type(3) {
+		top: calc(50% + 5px);
+	}
+	.header-bottom__menu {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 15px;
+		background: #FFEFBA;
+		transform: translateX(-100%);
+		transition: transform 0.5s; 
+	}
+	.header-bottom__menu.active {
+		transform: translateX(0);
+	}
+	.header-bottom__menu li {
+		list-style-type: none;
+	}
+	
+
 }

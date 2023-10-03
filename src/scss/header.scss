@@ -41,6 +41,13 @@
 .header-bottom__dropdown-menu-content {
 	@include dropdown;
 }
+.header-bottom__dropdown-menu-button{
+	border:none;
+	background: none;
+}
+.header-bottom__dropdown-menu{
+	list-style: none;
+}
 .show {
 	display: block;
 }
@@ -68,6 +75,13 @@
 	background: url(/src/assets/icons/Heart.svg) no-repeat 10px;
 	@include bottomButton;
 }
+
+
+
+
+
+
+
 @media screen and (max-width: 768px) {
 	.header-bottom__burger-menu,
 	.header-nav__mobile,

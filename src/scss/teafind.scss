@@ -8,29 +8,29 @@
 .teafind-content {
 	@include flex-between;
 }
-.teafind-sidebar {
+.teafind-content__sidebar {
 	
 	background-color: $primary-color;
 	@include fonts;
 	border-radius: 14px;
 	width: 276px;
 }
-.teafind-sidebar__title {
+.teafind-content__sidebar-title {
 	
 	padding: 50px 17px;
 }
-.teafind-sidebar__text {
+.teafind-content__sidebar-text {
 	margin: 0 auto;
 	width: 200px;
 
 
 }
-.teafind-sidebar__more {
+.teafind-content__sidebar-more {
 	margin: 75px auto;
 	@include moreButton
 	
 }
-.teafind-swiper {
+.teafind-content__swiper {
 	display: flex;
 }
 

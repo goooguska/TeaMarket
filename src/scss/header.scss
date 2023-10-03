@@ -1,8 +1,6 @@
 @import 'base.scss';
 .header-top {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
+	@include flex-between;
 }
 .header-top__telephone {
 	width: 200px;
@@ -85,11 +83,9 @@
 		margin: 0 auto;
 	}
 	.header-nav__tablet {
-		display: flex;
 		max-width: 210px;
-		align-items: center;
 		margin: 0 auto;
-		justify-content: space-around;
+		@include flex-between;
 	}
 }
 @media screen and (max-width: 576px) {

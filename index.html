@@ -1,122 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./src/scss/style.scss" />
-		<link
-			href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic"
-			rel="stylesheet"
-		/>
-		<title>SunChai</title>
-	</head>
 
-	<body>
-		<header class="header">
-			<div class="container">
-				<div class="header-top">
-					<div class="header-top__telephone">
-						<span class="header-top__telephone-text">Бесплатный звонок </span>
-						<span class="header-top__telephone-number">8 800 080 5011 </span>
-					</div>
-					<div class="header-top__logo logo">
-						<img src="./src/assets/icons/Logo.svg" alt="logo" />
-					</div>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./src/scss/style.scss" />
+	<link
+		href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+		rel="stylesheet" />
+	<title>SunChai</title>
+</head>
 
-					<div class="header-top__action">
-						<a class="header-top__action-button" href="">Регистрация</a>
-						<a class="header-top__action-button" href="">Войти</a>
-					</div>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header-top">
+				<div class="header-top__telephone">
+					<span class="header-top__telephone-text">Бесплатный звонок </span>
+					<span class="header-top__telephone-number">8 800 080 5011 </span>
 				</div>
-				<div class="header-nav__tablet">
-					<img src="./src/assets/icons/Man.svg" alt="Man" />
-					<img src="./src/assets/icons/CartBlack.svg" alt="Cart" />
-					<img src="./src/assets/icons/HeartBlack.svg" alt="Heart" />
-				</div>
-				<div class="header-search">
-					<input
-						class="header-search__field"
-						type="text"
-						inputmode="search"
-						placeholder="Поиск товаров"
-					/>
+				<div class="header-top__logo logo">
+					<img src="./src/assets/icons/Logo.svg" alt="logo" />
 				</div>
 
-				<div class="header-bottom">
-					<div class="header-bottom__burger-menu">
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
-					<div class="header-bottom__dropdown-menu">
-						<button
-							class="header-bottom__dropdown-menu-button"
-							onclick="funcDropDown()"
-						>
-							<li class="header-bottom__menu-item">Китайский чай</li>
-						</button>
-						<div class="header-bottom__dropdown-menu-content" id="dropDown">
-							<a href="" class="header-bottom__dropdown-menu-content__item"
-								>Пуэры</a
-							>
-							<a href="" class="header-bottom__dropdown-menu-content__item"
-								>Улуны</a
-							>
-							<a href="" class="header-bottom__dropdown-menu-content__item"
-								>Зелёный чай</a
-							>
-							<a href="" class="header-bottom__dropdown-menu-content__item"
-								>Красный чай</a
-							>
-							<a href="" class="header-bottom__dropdown-menu-content__item"
-								>Жёлтый чай</a
-							>
-							<a href="" class="header-bottom__dropdown-menu-content__item"
-								>Белый чай</a
-							>
-						</div>
-						<button
-							class="header-bottom__dropdown-menu-button"
-							onclick="funcDropDown()"
-						>
-							<li class="header-bottom__menu-item">Посуда</li>
-						</button>
-						<button
-							class="header-bottom__dropdown-menu-button"
-							onclick="funcDropDown()"
-						>
-							<li class="header-bottom__menu-item">Аксессуары для чая</li>
-						</button>
-						<button
-							class="header-bottom__dropdown-menu-button"
-							onclick="funcDropDown()"
-						>
-							<li class="header-bottom__menu-item">Околочайное</li>
-						</button>
-					</div>
+				<div class="header-top__action">
+					<a class="header-top__action-button" href="">Регистрация</a>
+					<a class="header-top__action-button" href="">Войти</a>
+				</div>
+			</div>
+			<div class="header-nav__tablet">
+				<img src="./src/assets/icons/Man.svg" alt="Man" />
+				<img src="./src/assets/icons/CartBlack.svg" alt="Cart" />
+				<img src="./src/assets/icons/HeartBlack.svg" alt="Heart" />
+			</div>
+			<div class="header-search">
+				<input class="header-search__field" type="text" inputmode="search" placeholder="Поиск товаров" />
+			</div>
 
-					<!-- <ul class="header-bottom__menu">
+			<div class="header-bottom">
+				<div class="header-bottom__burger-menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="header-bottom__dropdown-menu">
+					<button class="header-bottom__dropdown-menu-button" onclick="funcDropDown()">
+						<li class="header-bottom__menu-item">Китайский чай</li>
+					</button>
+					<div class="header-bottom__dropdown-menu-content" id="dropDown">
+						<a href="" class="header-bottom__dropdown-menu-content__item">Пуэры</a>
+						<a href="" class="header-bottom__dropdown-menu-content__item">Улуны</a>
+						<a href="" class="header-bottom__dropdown-menu-content__item">Зелёный чай</a>
+						<a href="" class="header-bottom__dropdown-menu-content__item">Красный чай</a>
+						<a href="" class="header-bottom__dropdown-menu-content__item">Жёлтый чай</a>
+						<a href="" class="header-bottom__dropdown-menu-content__item">Белый чай</a>
+					</div>
+					<button class="header-bottom__dropdown-menu-button" onclick="funcDropDown()">
+						<li class="header-bottom__menu-item">Посуда</li>
+					</button>
+					<button class="header-bottom__dropdown-menu-button" onclick="funcDropDown()">
+						<li class="header-bottom__menu-item">Аксессуары для чая</li>
+					</button>
+					<button class="header-bottom__dropdown-menu-button" onclick="funcDropDown()">
+						<li class="header-bottom__menu-item">Околочайное</li>
+					</button>
+				</div>
+
+				<!-- <ul class="header-bottom__menu">
 					<li class="header-bottom__menu-item">Китайский чай</li>
 				
 					
 					
 				</ul> -->
-					<div class="header-bottom__menu-action">
-						<a class="header-bottom__menu-action-buttonCart" href=""
-							>Корзина <span> 0</span></a
-						>
-						<a class="header-bottom__menu-action-buttonHeart" href=""
-							>Избранное <span> 0</span></a
-						>
-					</div>
-				</div>
-				<div class="header-nav__mobile">
-					<img src="./src/assets/icons/Man.svg" alt="Man" />
-					<img src="./src/assets/icons/CartBlack.svg" alt="Cart" />
+				<div class="header-bottom__menu-action">
+					<a class="header-bottom__menu-action-buttonCart" href="">Корзина <span> 0</span></a>
+					<a class="header-bottom__menu-action-buttonHeart" href="">Избранное <span> 0</span></a>
 				</div>
 			</div>
-		</header>
-		<script type="module" src="/src/js/main.js"></script>
-		<script src="/src/js/index.js"></script>
-	</body>
+			<div class="header-nav__mobile">
+				<img src="./src/assets/icons/Man.svg" alt="Man" />
+				<img src="./src/assets/icons/CartBlack.svg" alt="Cart" />
+			</div>
+		</div>
+	</header>
+	<section class='teafind'>
+		<div class="container">
+			<div class="teafind-content">
+				<div class="teafind-content__sidebar">
+					<h3 class='teafind-content__sidebar-title'>Рубрика "Чай-находка" </h3>
+					<p class='teafind-content__sidebar-text'>Это особая подборка чаев, отобранная нашими титестерами </p>
+					<a class='teafind-content__sidebar-more' href=""> Подробнее </a>
+
+				</div>
+				<div class="teafind-content__swiper swiper">
+					<div class="teafind-content__swiper-slide">
+						<tea-card class='teafind-swiper__slide-item'
+							name="Цзюцюй Хунмэй, Лунцзин Хунча Красная слива реки Девяти изгибов, 2023"
+							image='./src/assets/images/teas/teafind420.svg' rating='./src/assets/images/teas/rating5.svg'
+							price='420.00 ₽  ' weight='за 50 грамм'>
+						</tea-card>
+					</div>
+					<div class="teafind-swiper__slide">
+						<tea-card class='teafind-swiper__slide-item'
+							name="Цзи Бянь Фэнсюэ Хун Юнь Мелодия снежного ливня, 2022 осень"
+							image='./src/assets/images/teas/teafind574.svg' rating='./src/assets/images/teas/rating4.svg'
+							price='574.00 ₽' weight='за 50 грамм'>
+						</tea-card>
+					</div>
+					<div class="teafind-swiper__slide">
+						<tea-card class='teafind-swiper__slide-item' name="Лушань Юньу “Облака и туман гор Лушань”, 2023 март"
+							image='./src/assets/images/teas/teafind730.svg' rating='./src/assets/images/teas/rating4.svg'
+							price='730.00 ₽  ' weight='за 50 грамм'> </tea-card>
+					</div>
+					<div class="teafind-swiper__button-next"></div>
+					<div class="teafind-swiper__button-prev"></div>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+	<section class='lastNews'>
+		<div class="container">
+			<div class="lastNews-content">
+				<div class="lastNews-content__text">
+					<h3 class='lastNews-content__text-subtitle'>Последние новинки </h3>
+					<a class='lastNews-content__text-more' href="">Cмотреть все </a>
+				</div>
+				<div class="lastNews-content-swiper swiper">
+					<div class="lastNews-swiper__slide">
+						<dishes-card class='lastNews-swiper__slide-item'
+							name="Цзюцюй Хунмэй, Лунцзин Хунча Красная слива реки Девяти изгибов, 2023"
+							image='./src/assets/images/teas/teafind420.svg' rating='./src/assets/images/teas/rating5.svg'
+							price='420.00 ₽  ' weight='за 50 грамм'> </dishes-card>
+					</div>
+					<div class="lastNews-swiper__slide">
+						<dishes-card class='lastNews-swiper__slide-item'
+							name="Цзи Бянь Фэнсюэ Хун Юнь Мелодия снежного ливня, 2022 осень"
+							image='./src/assets/images/teas/teafind574.svg' rating='./src/assets/images/teas/rating4.svg'
+							price='574.00 ₽' weight='за 50 грамм'>
+						</dishes-card>
+					</div>
+					<div class="lastNews-swiper__slide">
+						<dishes-card class='lastNews-swiper__slide-item' name="Лушань Юньу “Облака и туман гор Лушань”, 2023 март"
+							image='./src/assets/images/teas/teafind730.svg' rating='./src/assets/images/teas/rating4.svg'
+							price='730.00 ₽' weight='за 50 грамм'> </dishes-card>
+					</div>
+					<div class="lastNews-swiper__button-next"></div>
+					<div class="lastNews-swiper__button-prev"></div>
+				</div>
+			</div>
+
+	</section>
+
+
+
+
+
+	<script type="module" src="/src/js/main.js"></script>
+	<script src="/src/js/index.js"></script>
+	<script src='./src/js/teacard.js'> </script>
+	<script src='./src/js/swiper.js'></script>
+</body>
+
 </html>

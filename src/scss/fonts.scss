@@ -1,0 +1,26 @@
+@import 'mixins';
+@import 'variables.scss';
+
+@mixin fonts{
+	
+	h2{
+		font-size: 42px;
+		color: $font-color;
+		font-weight: 500;
+	}
+	h3{
+		font-size: 32px;
+		color: $secondary-color;
+		font-weight: 500
+	}
+	p{
+		font-size:18px ;
+		color: $oppacity-color;
+		font-weight: 500;
+	}
+	
+
+
+
+}
+

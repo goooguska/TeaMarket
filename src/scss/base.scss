@@ -1,5 +1,6 @@
 @import 'mixins';
 @import 'variables.scss';
+@import 'fonts.scss';
 ul{
 	list-style: none;
 }
@@ -10,17 +11,23 @@ a{
 	max-width: 1200px;
 	width: 100%;
 	margin: 0 auto;
+	margin-bottom: 50px;
 }
 
 body{
 	padding: 0 20px;
 	font-family: "Rubik"
 }
-h2{
-	font-size: 42px;
-	color: $font-color;
-	font-weight: 500;
-}
+// h2{
+// 	font-size: 42px;
+// 	color: $font-color;
+// 	font-weight: 500;
+// }
+// h3{
+// 	font-size: 32px;
+// 	color: $secondary-color;
+// 	font-weight: 500;
+// }
 // .logo {
 // 	display: flex;
 // 	align-items: center;

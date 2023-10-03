@@ -1,0 +1,49 @@
+
+@import 'base.scss';
+.teafind {
+	
+
+}
+
+.teafind-content {
+	@include flex-between;
+}
+.teafind-sidebar {
+	
+	background-color: $primary-color;
+	@include fonts;
+	border-radius: 14px;
+	width: 276px;
+}
+.teafind-sidebar__title {
+	
+	padding: 50px 17px;
+}
+.teafind-sidebar__text {
+	margin: 0 auto;
+	width: 200px;
+
+
+}
+.teafind-sidebar__more {
+	margin: 75px auto;
+	@include moreButton
+	
+}
+.teafind-swiper {
+	display: flex;
+}
+
+.teafind-content__swiper-slide:hover {
+	@include cardHover
+
+	
+}
+.teafind-swiper__button-next .teafind-swiper__button-prev {
+	right: 140px !important; 
+	left: auto;
+}
+.teafind-swiper__button-prev .teafind-swiper__button-next{
+	left: 140px !important; 
+	right: auto;
+}

@@ -43,19 +43,43 @@
 					<span></span>
 					<span></span>
 				</div>
+
+
 				<div class="header-bottom__dropdown-menu">
-					<button class="header-bottom__dropdown-menu-button" onclick="funcDropDown()">
-						<li class="header-bottom__menu-item">Китайский чай</li>
-					</button>
-					<div class="header-bottom__dropdown-menu-content" id="dropDown">
-						<a href="" class="header-bottom__dropdown-menu-content__item">Пуэры</a>
-						<a href="" class="header-bottom__dropdown-menu-content__item">Улуны</a>
-						<a href="" class="header-bottom__dropdown-menu-content__item">Зелёный чай</a>
-						<a href="" class="header-bottom__dropdown-menu-content__item">Красный чай</a>
-						<a href="" class="header-bottom__dropdown-menu-content__item">Жёлтый чай</a>
-						<a href="" class="header-bottom__dropdown-menu-content__item">Белый чай</a>
+					<div class="header-bottom__dropdown-menu__category">
+						<span class='header-bottom__dropdown-menu__category-name' onchange='dropDown(this)'>Китайский чай </span>
+						<div class="arrow"></div>
 					</div>
-					<button class="header-bottom__dropdown-menu-button" onclick="funcDropDown()">
+					<ul class='header-bottom__dropdown-menu__content'>
+						<li><a href="" class="header-bottom__dropdown-menu__content-item">Пуэры</a> </li>
+						<li><a href="" class="header-bottom__dropdown-menu__content-item">Улуны</a></li>
+						<li><a href="" class="header-bottom__dropdown-menu__content-item">Зелёный чай</a></li>
+						<li><a href="" class="header-bottom__dropdown-menu__content-item">Красный чай</a></li>
+						<li><a href="" class="header-bottom__dropdown-menu__content-item">Жёлтый чай</a></li>
+						<li><a href="" class="header-bottom__dropdown-menu__content-item">Белый чай</a></li>
+					</ul>
+
+					<div class="header-bottom__dropdown-menu__category">
+						<span class='header-bottom__dropdown-menu__category-name' onchange='dropDown(this)'>Посуда </span>
+						<div class="arrow"></div>
+					</div>
+					<ul class='header-bottom__dropdown-menu__content'>
+						<li><a href="" class="header-bottom__dropdown-menu__content-item">Чайники</a> </li>
+						<li><a href="" class="header-bottom__dropdown-menu__content-item">Пиалы</a></li>
+						<li><a href="" class="header-bottom__dropdown-menu__content-item">Гайвани</a></li>
+						<li><a href="" class="header-bottom__dropdown-menu__content-item">Гайвани</a></li>
+						<li><a href="" class="header-bottom__dropdown-menu__content-item">Чабани</a></li>
+						<li><a href="" class="header-bottom__dropdown-menu__content-item">Чахаи</a></li>
+					</ul>
+
+
+				</div>
+
+
+
+
+
+				<!-- <button class="header-bottom__dropdown-menu-button" onclick="funcDropDown()">
 						<li class="header-bottom__menu-item">Посуда</li>
 					</button>
 					<div class="header-bottom__dropdown-menu-content" id="dropDown">
@@ -85,9 +109,7 @@
 						<a href="" class="header-bottom__dropdown-menu-content__item">Браслеты и чётки</a>
 						<a href="" class="header-bottom__dropdown-menu-content__item">Декор пространства</a>
 						<a href="" class="header-bottom__dropdown-menu-content__item">Литература</a>
-					</div>
-				</div>
-
+					</div> -->
 				<div class="header-bottom__menu-action">
 					<a class="header-bottom__menu-action-buttonCart" href="">Корзина <span> 0</span></a>
 					<a class="header-bottom__menu-action-buttonHeart" href="">Избранное <span> 0</span></a>

@@ -1,56 +1,117 @@
 @import 'base.scss';
 .header-top {
 	@include flex-between;
+	&__telephone{
+		width: 200px;
+	}&__telephone-text{
+		color: $headerTelephone-color;
+		font-size: $lowFont-size;
+	}&__telephone-number{
+		display: inline-block;
+		font-size: $lowFont-size;
+	}&__action-button{
+		@include button;
+	}
 }
-.header-top__telephone {
-	width: 200px;
+.header-search{
+	@include search;
+	&__field{
+		background: url(/src/assets/icons/Search.svg) no-repeat 35%;
+	}
 }
-.header-top__telephone-text {
-	color: $headerTelephone-color;
-	font-size: $lowFont-size;
+.header-bottom{
+	margin-top: 17px;
+	@include flex-between;
+	&__dropdown-menu__category{
+		display: flex;
+		align-items: center;
+	}
+	&__dropdown-menu__category-name:hover{
+		color: $primary-color;
+
+	}&__dropdown-menu__content{
+		@include closeDropdown
+		 
+	}&__dropdown-menu__content-open{
+		display: block;
+		opacity: 1;
+	}&__dropdown-menu{
+		@include dropdown;
+		list-style: none;
+	}&__menu-action{
+		@include flex-wrap;
+	}&__menu-action-buttonCart{
+		margin-right: 5px;
+		background: url(/src/assets/icons/Cart.svg) no-repeat 10px;
+		@include bottomButton;
+	}&__menu-action-buttonHeart{
+		background: url(/src/assets/icons/Heart.svg) no-repeat 10px;
+		@include bottomButton;
+	}
 }
-.header-top__telephone-number {
-	display: inline-block;
-	font-size: $lowFont-size;
+
+.arrow{
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 6px solid #000;
+	transition: 0.3s;
 }
-.header-top__logo {
+.arrow-rotate{
+	transform: rotate(180deg);
 }
-.logo {
-}
-.header-top__action-button {
-	@include button;
+.show {
+	display: block;
 }
 .header-bottom__burger-menu,
 .header-nav__mobile,
 .header-nav__tablet {
 	display: none;
 }
-.header-search {
-	@include search;
-}
-.header-search__field {
-	background: url(/src/assets/icons/Search.svg) no-repeat 35%;
-}
-.header-bottom {
-	margin-top: 17px;
-	@include flex-between;
-}
-.header-bottom__menu {
-	@include menu;
-}
-.header-bottom__dropdown-menu-content {
-	@include dropdown;
-}
-.header-bottom__dropdown-menu-button{
-	border:none;
-	background: none;
-}
-.header-bottom__dropdown-menu{
-	list-style: none;
-}
-.show {
-	display: block;
-}
+// .header-top__telephone {
+// 	width: 200px;
+// }
+// .header-top__telephone-text {
+// 	color: $headerTelephone-color;
+// 	font-size: $lowFont-size;
+// }
+// .header-top__telephone-number {
+// 	display: inline-block;
+// 	font-size: $lowFont-size;
+// }
+// .header-top__logo {
+// }
+// .logo {
+// }
+// .header-top__action-button {
+// 	@include button;
+// }
+
+// .header-search {
+// 	@include search;
+// }
+// .header-search__field {
+// 	background: url(/src/assets/icons/Search.svg) no-repeat 35%;
+// }
+// .header-bottom {
+// 	margin-top: 17px;
+// 	@include flex-between;
+// }
+// .header-bottom__menu {
+// 	@include menu;
+// }
+// .header-bottom__dropdown-menu-content {
+// 	@include dropdown;
+// }
+// .header-bottom__dropdown-menu-button{
+// 	border:none;
+// 	background: none;
+// }
+// .header-bottom__dropdown-menu{
+// 	list-style: none;
+// }
+
 
 // .header-bottom__menu-item {
 // 	position: relative;
@@ -63,18 +124,18 @@
 // 	width: 16px;
 // 	background: url('/src/assets/icons/DropDown.svg') no-repeat;
 // }
-.header-bottom__menu-action {
-	@include flex-wrap;
-}
-.header-bottom__menu-action-buttonCart {
-	margin-right: 5px;
-	background: url(/src/assets/icons/Cart.svg) no-repeat 10px;
-	@include bottomButton;
-}
-.header-bottom__menu-action-buttonHeart {
-	background: url(/src/assets/icons/Heart.svg) no-repeat 10px;
-	@include bottomButton;
-}
+// .header-bottom__menu-action {
+// 	@include flex-wrap;
+// }
+// .header-bottom__menu-action-buttonCart {
+// 	margin-right: 5px;
+// 	background: url(/src/assets/icons/Cart.svg) no-repeat 10px;
+// 	@include bottomButton;
+// }
+// .header-bottom__menu-action-buttonHeart {
+// 	background: url(/src/assets/icons/Heart.svg) no-repeat 10px;
+// 	@include bottomButton;
+// }
 
 
 

@@ -25,13 +25,10 @@
 	&__dropdown-menu__category{
 		display: flex;
 		align-items: center;
-	}
-	&__dropdown-menu__category-name:hover{
+	}&__dropdown-menu__category-name:hover{
 		color: $primary-color;
-
 	}&__dropdown-menu__content{
-		@include closeDropdown
-		 
+		@include closeDropdown	 
 	}&__dropdown-menu__content-open{
 		display: block;
 		opacity: 1;
@@ -69,81 +66,8 @@
 .header-nav__tablet {
 	display: none;
 }
-// .header-top__telephone {
-// 	width: 200px;
-// }
-// .header-top__telephone-text {
-// 	color: $headerTelephone-color;
-// 	font-size: $lowFont-size;
-// }
-// .header-top__telephone-number {
-// 	display: inline-block;
-// 	font-size: $lowFont-size;
-// }
-// .header-top__logo {
-// }
-// .logo {
-// }
-// .header-top__action-button {
-// 	@include button;
-// }
 
-// .header-search {
-// 	@include search;
-// }
-// .header-search__field {
-// 	background: url(/src/assets/icons/Search.svg) no-repeat 35%;
-// }
-// .header-bottom {
-// 	margin-top: 17px;
-// 	@include flex-between;
-// }
-// .header-bottom__menu {
-// 	@include menu;
-// }
-// .header-bottom__dropdown-menu-content {
-// 	@include dropdown;
-// }
-// .header-bottom__dropdown-menu-button{
-// 	border:none;
-// 	background: none;
-// }
-// .header-bottom__dropdown-menu{
-// 	list-style: none;
-// }
-
-
-// .header-bottom__menu-item {
-// 	position: relative;
-// 	margin-right: 30px;
-// }
-// .header-bottom__menu-item::after {
-// 	content: '';
-// 	position: absolute;
-// 	height: 16px;
-// 	width: 16px;
-// 	background: url('/src/assets/icons/DropDown.svg') no-repeat;
-// }
-// .header-bottom__menu-action {
-// 	@include flex-wrap;
-// }
-// .header-bottom__menu-action-buttonCart {
-// 	margin-right: 5px;
-// 	background: url(/src/assets/icons/Cart.svg) no-repeat 10px;
-// 	@include bottomButton;
-// }
-// .header-bottom__menu-action-buttonHeart {
-// 	background: url(/src/assets/icons/Heart.svg) no-repeat 10px;
-// 	@include bottomButton;
-// }
-
-
-
-
-
-
-
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 	.header-bottom__burger-menu,
 	.header-nav__mobile,
 	.header-bottom__menu-action,
@@ -163,7 +87,7 @@
 		@include flex-between;
 	}
 }
-@media screen and (max-width: 576px) {
+@media  (max-width: 576px) {
 	.header-nav__tablet {
 		display: none;
 	}

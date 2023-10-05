@@ -2,98 +2,9 @@
 @import 'variables.scss';
 @import url('https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic');
 
-// @mixin fonts {
-// 	h2 {
-// 		font-size: 42px;
-// 		color: $font-color;
-// 		font-weight: 500;
-// 	}
-// 	h3 {
-// 		font-size: 32px;
-// 		color: $secondary-color;
-// 		font-weight: 500;
-// 	}
-// 	p {
-// 		font-size: 18px;
-// 		color: $oppacity-color;
-// 		font-weight: 500;
-// 	}
-// }
-// переписать
+
 $font-color: #303030;
 $lowFont-size: 14px;
-
-@mixin text-headline($font-size) {
-  font-family: 'Rubik', sans-serif;
-  font-size: $font-size;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 900;
-  color: #000;
-}
-
-@mixin text-body($font-size, $font-weight) {
-  font-family: 'Satoshi', sans-serif;
-  font-size: $font-size;
-  text-decoration: none;
-
-  font-weight: $font-weight;
-  color: #000;
-}
-
-@mixin text-headline-logo {
-  @include text-headline(32px);
-}
-
-@mixin text-headline-h1 {
-  @include text-headline(64px);
-}
-
-@mixin text-headline-h2 {
-  @include text-headline(48px);
-}
-@mixin text-headline-card {
-  @include text-body(20px, 700);
-}
-
-@mixin text-body-prices {
-  @include text-body(24px, 700);
-}
-
-@mixin text-body-fullPrice {
-  @include text-body(24px, 700);
-  color: rgba(#000, 0.4);
-}
-
-@mixin text-body-discount {
-  @include text-body(12px, 700);
-  color: #ff3333;
-  padding: 6px 13px;
-  background-color: rgba(#ff3333, 0.1);
-  border-radius: 62px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @mixin text-body($font-size) {
   font-family: 'Rubik', sans-serif;
   font-size: $font-size;
@@ -110,28 +21,69 @@ $lowFont-size: 14px;
 
 @mixin text-body-h2{
   @include text-body(42px,400, $font-color);
+  @media (max-width: $vp-small) {
+    @include text-body(25px);
+  }
+  @media (max-width: $vp-x-small) {
+    @include text-body(16px);
+  }
 }
 
 @mixin text-body-h3 {
   @include text-body(32px,400,$font-color);
+  @media (max-width: $vp-small) {
+    @include text-body(23px);
+  }
+  @media (max-width: $vp-x-small) {
+    @include text-body(14px);
+  }
 
 }
 @mixin text-body-teafind{
 	@include text-body(32px,700, $secondary-color);
+  @media (max-width: $vp-small) {
+    @include text-body(16px);
+  }
+  @media (max-width: $vp-x-small) {
+    @include text-body(10px);
+  }
 	
 }
 @mixin text-body-footer{
 	@include text-body(22px,400,$font-color);
-
+  @media (max-width: $vp-small) {
+    @include text-body(20px);
+  }
+  @media (max-width: $vp-x-small) {
+    @include text-body(10px);
+  }
 }
 @mixin text-body-p {
 	@include text-body(18px,400,$oppacity-color);
+
 }
 @mixin text-body-more{
 	@include text-body(18px,400, $primary-color);
+  @media (max-width: $vp-small) {
+    @include text-body(15px);
+  }
+  @media (max-width: $vp-x-small) {
+    @include text-body(8px);
+  }
 	
 }
 @mixin text-body-card{
 	@include text-body(15px,600,$font-color);
-
+  @media (max-width: $vp-x-small) {
+    @include text-body(10px);
+  }
+}
+@mixin text-body-footer-p{
+	@include text-body(32px,400,$font-color);
+  @media (max-width: $vp-small) {
+    @include text-body(25px);
+  }
+  @media (max-width: $vp-x-small) {
+    @include text-body(10px);
+  }
 }

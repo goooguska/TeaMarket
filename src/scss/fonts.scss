@@ -1,26 +1,22 @@
 @import 'mixins';
 @import 'variables.scss';
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic');
 
-@mixin fonts{
-	
-	h2{
+@mixin fonts {
+	h2 {
 		font-size: 42px;
 		color: $font-color;
 		font-weight: 500;
 	}
-	h3{
+	h3 {
 		font-size: 32px;
 		color: $secondary-color;
-		font-weight: 500
+		font-weight: 500;
 	}
-	p{
-		font-size:18px ;
+	p {
+		font-size: 18px;
 		color: $oppacity-color;
 		font-weight: 500;
 	}
-	
-
-
-
 }
-
+// переписать

@@ -1,22 +1,22 @@
 @import 'mixins';
 @import 'variables.scss';
 @import 'fonts.scss';
-ul{
+
+ul {
 	list-style: none;
 }
-a{
+a {
 	text-decoration: none;
 }
 .container {
-	max-width: 1200px;
+	max-width: 1240px;
 	width: 100%;
 	margin: 0 auto;
-	margin-bottom: 50px;
+	padding: 0 20px;
 }
 
-body{
-	padding: 0 20px;
-	font-family: "Rubik"
+body {
+	font-family: 'Rubik' sans-serif; //
 }
 // h2{
 // 	font-size: 42px;
@@ -33,4 +33,3 @@ body{
 // 	align-items: center;
 // 	margin: 0 auto;
 // }
-

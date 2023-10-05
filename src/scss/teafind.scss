@@ -1,49 +1,39 @@
-
 @import 'base.scss';
 .teafind {
-	
-
 }
 
 .teafind-content {
 	@include flex-between;
 }
 .teafind-content__sidebar {
-	
 	background-color: $primary-color;
 	@include fonts;
 	border-radius: 14px;
 	width: 276px;
 }
 .teafind-content__sidebar-title {
-	
 	padding: 50px 17px;
 }
 .teafind-content__sidebar-text {
 	margin: 0 auto;
-	width: 200px;
-
-
+	width: 200px; //?
 }
 .teafind-content__sidebar-more {
 	margin: 75px auto;
-	@include moreButton
-	
+	@include moreButton;
 }
 .teafind-content__swiper {
 	display: flex;
 }
 
 .teafind-content__swiper-slide:hover {
-	@include cardHover
-
-	
+	@include cardHover;
 }
 .teafind-swiper__button-next .teafind-swiper__button-prev {
-	right: 140px !important; 
+	right: 140px !important; //?
 	left: auto;
 }
-.teafind-swiper__button-prev .teafind-swiper__button-next{
-	left: 140px !important; 
+.teafind-swiper__button-prev .teafind-swiper__button-next {
+	left: 140px !important; //?
 	right: auto;
 }

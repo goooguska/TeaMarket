@@ -94,10 +94,10 @@ $lowFont-size: 14px;
 
 
 
-@mixin text-headline($font-size) {
+@mixin text-body($font-size) {
   font-family: 'Rubik', sans-serif;
   font-size: $font-size;
-  font-weight: 500;
+  font-weight: 400;
   color: $font-color;
 }
 
@@ -108,12 +108,30 @@ $lowFont-size: 14px;
   color: #000;
 }
 
-@mixin text-headline-h2{
-  @include text-headline(42px);
+@mixin text-body-h2{
+  @include text-body(42px,400, $font-color);
 }
 
-@mixin text-headline-h3 {
-  @include text-headline(32px);
-	color: $secondary-color;
+@mixin text-body-h3 {
+  @include text-body(32px,400,$font-color);
+
 }
-@mixin 
+@mixin text-body-teafind{
+	@include text-body(32px,700, $secondary-color);
+	
+}
+@mixin text-body-footer{
+	@include text-body(22px,400,$font-color);
+
+}
+@mixin text-body-p {
+	@include text-body(18px,400,$oppacity-color);
+}
+@mixin text-body-more{
+	@include text-body(18px,400, $primary-color);
+	
+}
+@mixin text-body-card{
+	@include text-body(15px,600,$font-color);
+
+}

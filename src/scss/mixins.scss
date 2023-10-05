@@ -2,7 +2,7 @@
 
 @mixin menu {
 	display: flex;
-	font-size: $lowFont-size; //?
+	@include text-body-header;
 }
 @mixin flex-around {
 	display: flex;

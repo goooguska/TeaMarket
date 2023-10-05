@@ -3,8 +3,8 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic');
 
 
-$font-color: #303030;
-$lowFont-size: 14px;
+
+
 @mixin text-body($font-size) {
   font-family: 'Rubik', sans-serif;
   font-size: $font-size;
@@ -12,15 +12,18 @@ $lowFont-size: 14px;
   color: $font-color;
 }
 
-@mixin text-body($font-size, $font-weight) {
+@mixin text-body($font-size, $font-weight, $font-color) {
   font-family: 'Rubik', sans-serif;
   font-size: $font-size;
   font-weight: $font-weight;
-  color: #000;
+
+}
+@mixin text-body-header{
+  @include text-body(14px,400,$black-color);
 }
 
 @mixin text-body-h2{
-  @include text-body(42px,400, $font-color);
+  @include text-body(42px,400, $black-color);
   @media (max-width: $vp-small) {
     @include text-body(25px);
   }
@@ -30,7 +33,7 @@ $lowFont-size: 14px;
 }
 
 @mixin text-body-h3 {
-  @include text-body(32px,400,$font-color);
+  @include text-body(32px,400,$black-color);
   @media (max-width: $vp-small) {
     @include text-body(23px);
   }
@@ -50,7 +53,7 @@ $lowFont-size: 14px;
 	
 }
 @mixin text-body-footer{
-	@include text-body(22px,400,$font-color);
+	@include text-body(22px,400,$black-color);
   @media (max-width: $vp-small) {
     @include text-body(20px);
   }
@@ -73,13 +76,13 @@ $lowFont-size: 14px;
 	
 }
 @mixin text-body-card{
-	@include text-body(15px,600,$font-color);
+	@include text-body(15px,600,$black-color);
   @media (max-width: $vp-x-small) {
     @include text-body(10px);
   }
 }
 @mixin text-body-footer-p{
-	@include text-body(32px,400,$font-color);
+	@include text-body(32px,400,$black-color);
   @media (max-width: $vp-small) {
     @include text-body(25px);
   }

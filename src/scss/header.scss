@@ -1,11 +1,11 @@
 @import 'base.scss';
 .header-top {
-	@include flex-between;
+	@include flex-around;
 	&__telephone {
 		max-width: 200px;
 	}
 	&__telephone-text {
-		color: $headerTelephone-color;
+		color: $headerInfo-color;
 		font-size: $lowFont-size;
 	}
 	&__telephone-number {
@@ -24,7 +24,7 @@
 }
 .header-bottom {
 	margin-top: 17px;
-	@include flex-between;
+	@include flex-around;
 	&__dropdown-menu-category {
 		display: flex;
 		align-items: center;
@@ -132,7 +132,7 @@
 		margin-top: 20px;
 		max-width: 210px;
 		margin: 0 auto;
-		@include flex-between;
+		@include flex-around;
 	}
 }
 @media (max-width: 576px) {

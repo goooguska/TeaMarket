@@ -44,3 +44,11 @@ body.addEventListener('click', () => {
 		menu.classList.remove('header-bottom__dropdown-menu-content-open');
 	});
 });
+
+
+const burgerMenuBtn = document.querySelector('.header-bottom__burger-menu-btn');
+const burgerMenu = document.querySelector(".header-bottom__burger-menu") ;
+burgerMenuBtn.addEventListener("click",() => {
+	burgerMenuBtn.classList.toggle('active');
+	burgerMenu.classList.toggle('open')
+})

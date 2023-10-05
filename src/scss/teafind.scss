@@ -3,7 +3,7 @@
 }
 
 .teafind-content {
-	@include flex-between;
+	@include flex-around;
 }
 .teafind-content__sidebar {
 	background-color: $primary-color;

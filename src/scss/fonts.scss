@@ -5,12 +5,6 @@
 
 
 
-@mixin text-body($font-size) {
-  font-family: 'Rubik', sans-serif;
-  font-size: $font-size;
-  font-weight: 400;
-  color: $font-color;
-}
 
 @mixin text-body($font-size, $font-weight, $font-color) {
   font-family: 'Rubik', sans-serif;
@@ -22,7 +16,7 @@
   @include text-body(14px,400,$black-color);
 }
 
-@mixin text-body-h2{
+@mixin text-headline-h2{
   @include text-body(42px,400, $black-color);
   @media (max-width: $vp-small) {
     @include text-body(25px);
@@ -49,6 +43,13 @@
   }
   @media (max-width: $vp-x-small) {
     @include text-body(10px);
+  }
+	
+}
+@mixin text-body-search{
+	@include text-body(16px,400, $input-color);
+  @media (max-width: $vp-x-small) {
+    @include text-body(10px, 400, $input-color);
   }
 	
 }

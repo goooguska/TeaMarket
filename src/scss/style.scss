@@ -1,4 +1,3 @@
-@import 'base.scss';
-@import 'fonts.scss';
-@import 'header.scss';
+@use './modules/base';
+@use './modules/sections/header';
 // @import 'teafind.scss';

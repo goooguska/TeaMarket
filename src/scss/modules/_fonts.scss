@@ -1,16 +1,17 @@
-@import 'mixins';
-@import 'variables.scss';
+@use './variables' as *; //Спросить правильно ли так?
 @import url('https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic');
 
 
-
+%reset-link{
+	text-decoration: none;
+}
 
 
 @mixin text-body($font-size, $font-weight, $font-color) {
   font-family: 'Rubik', sans-serif;
   font-size: $font-size;
   font-weight: $font-weight;
-
+  
 }
 @mixin text-body-header{
   @include text-body(14px,400,$black-color);
@@ -36,13 +37,17 @@
   }
 
 }
+@mixin text-body-telephone{
+  @include text-body(18px,400,$black-color);
+  @extend %reset-link;
+}
 @mixin text-body-teafind{
-	@include text-body(32px,700, $secondary-color);
+	@include text-body(32px,700,$secondary-color);
   @media (max-width: $vp-small) {
-    @include text-body(16px);
+    @include text-body(16px,700, $secondary-color );
   }
   @media (max-width: $vp-x-small) {
-    @include text-body(10px);
+    @include text-body(10px,700, $secondary-color);
   }
 	
 }
@@ -68,6 +73,7 @@
 }
 @mixin text-body-more{
 	@include text-body(18px,400, $primary-color);
+  @extend %reset-link;
   @media (max-width: $vp-small) {
     @include text-body(15px);
   }

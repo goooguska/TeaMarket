@@ -1,224 +1,25 @@
-@import 'base.scss';
-.header-top {
-	@include flex-around;
-	&__telephone {
-		max-width: 200px;
-		@include text-body-header;
-	}
-	&__telephone-text {
-		color: $headerInfo-color;
-
-	}
-	&__telephone-number {
-		display: inline-block;
-
-	}
-	&__action-button {
-		@include button;
-	}
+.header {
 }
-.header-search {
-	@include text-body-search;
-	@include search;
-	&__field {
-		background: url('/src/assets/icons/Search.svg') no-repeat 35%;
-	}
+.header__nav {
 }
-.header-bottom {
-	margin-top: 17px;
-	@include flex-around;
-	&__dropdown-menu-category {
-		display: flex;
-		align-items: center;
-	}
-	&__dropdown-menu-category-name:hover {
-		color: $primary-color;
-	}
-	&__dropdown-menu-content{
-		@include closeDropdown;
-	}
-	&__dropdown-menu-content-open {
-		display: block;
-		opacity: 1;
-	}
-	&__dropdown-menu {
-		@include dropdown;
-		list-style: none;
-	}
-	&__menu-action {
-		@include flex-wrap;
-	}
-	&__menu-action-buttonCart {
-		margin-right: 5px;
-		background: url('/src/assets/icons/Cart.svg') no-repeat 10px;
-		@include bottomButton;
-	}
-	&__menu-action-buttonHeart {
-		background: url('/src/assets/icons/Heart.svg') no-repeat 10px;
-		@include bottomButton;
-	}
-}
-
-.arrow {
-	width: 0;
-	height: 0;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-top: 6px solid $black-color;
-	transition: 0.3s;
-}
-.arrow-rotate {
-	transform: rotate(180deg);
-}
-.show {
-	display: block;
-}
-.header-bottom__burger-menu,
-.header-nav__mobile,
-.header-nav__tablet {
-	display: none;
-}
-
-.header-bottom__burger-menu ul{
-	width: 100%;
+.header__top {
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
 }
-.header-bottom__burger-menu-btn{
-	display: none;
-	position: relative;
-	z-index: 50;
-	align-items: center;
-	justify-content: flex-end;
-	width: 30px;
-	height: 18px;
+.header__top-telephone {
 }
-.header-bottom__burger-menu-btn span{
-	height: 3px;
-	width: 80%;
-	transform: scale(1);
-	background-color: $primary-color;
+.header__top-telephone-link {
+	display: flex;
+	flex-direction: column;
 }
-.header-bottom__burger-menu-btn::before, .header-bottom__burger-menu-btn::after{
-	content: '';
-	position: absolute;
-	height: 3px;
-	width: 100%;
-	background-color: $primary-color;
-	transition: all 0.3s ease 0s;
+.header__top-telephone-link-description {
 }
-.header-bottom__burger-menu-btn::before{
-	top: 0;
+.header__top-logo {
 }
-.header-bottom__burger-menu-btn::after{
-	bottom: 0px;
+.logo {
 }
-.header-bottom__burger-menu-btn.active span{
-	transform: scale(0);
+.header__top-action {
 }
-
-.header-bottom__burger-menu-btn.active::before{
-	top: 50%;
-	transform: rotate(-45deg) translate(0,-50%);
-}
-
-.header-bottom__burger-menu-btn.active::after{
-	bottom: 50%;
-	transform: rotate(45deg) translate(0,50%);
-}
-.open{
-	display: flex !important;
-}
-
-
-@media (max-width: $vp-medium) {
-	.header-bottom {
-		display: grid;
-		grid-template-columns:repeat(4, 1fr);
-		grid-auto-rows: 50px;
-		grid-auto-columns: 100px;
-	}
-	.header-bottom__menu-action {
-		grid-column-start: 1;
-		grid-column-end: 5;
-		grid-row-start: 1;
-		justify-content: center;
-		grid-template-columns: repeat(2, 1fr);
-	}
-}
-@media (max-width: $vp-small) {
-	.header-nav__mobile,
-	.header-bottom__menu-action,
-	.header-top__telephone,
-	.header-top__action {
-		display: none;
-	}
-	.header-top {
-		display: flex;
-	}
-	.logo {
-		margin: 0 auto;
-	}
-	.header-nav__tablet {
-		margin-top: 20px;
-		max-width: 210px;
-		margin: 0 auto;
-		@include flex-around;
-	}
-}
-@media (max-width:$vp-x-small) {
-	
-	.header-bottom__burger-menu-btn{
-		display: flex;		
-	}
-	.header-bottom__burger-menu{
-		display: none;
-		position: absolute;
-		z-index: 50;	
-		top: 10rem	;
-		left: 40px;
-	}
-	.header-bottom__burger-menu ul{	
-		flex-direction: column;
-		row-gap: 30px;
-	}
-	.header-bottom__burger-menu-list li{
-		min-width: 247px;
-		padding: 7px ;
-		border:1px solid $primary-color ;
-		border-radius: 14px;
-		@include text-body-header;
-	}
-	.header-bottom__burger-menu-list li{
-		position: relative;
-	}
-	.header-bottom__burger-menu-list li::after{
-		content: '';
-		background-image: url(./src/assets/icons/arrowRight.svg);
-		position: absolute;
-		left: 16em;
-		top:7px;	
-		width: 16px;
-		height: 16px;
-	}
-	.header-bottom,
-	.header-nav__tablet {
-		display: none;
-	}
-
-	.header-search {
-		display: flex;
-		margin: 0 auto;
-		position: relative;
-		max-width: 280px;
-	}
-	.header-nav__mobile {
-		display: flex;
-	}
-	.header-mobile{
-		@include flex-around;
-	}
-
-
-	
+.header__top-action-button {
 }

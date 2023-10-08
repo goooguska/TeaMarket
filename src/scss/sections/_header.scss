@@ -18,6 +18,7 @@
 		@include mixins.headerTopButton
 	}
 }
+.header__nav-mobile,
 .header__nav-tablet{
 	display: none;
 }
@@ -86,6 +87,10 @@
 	}
 	
 }
+
+
+
+
 @media (max-width:variables.$vp-medium){
 	.header__bottom-action{
 		display: flex;
@@ -103,9 +108,23 @@
 		display: none;
 	}
 	.header__nav-tablet{
-	display: flex;
+		display: flex;
+		margin: 0 auto;
+		justify-content: space-between;
+		max-width: 137px;
 }
 
 	
+}
+@media (max-width:variables.$vp-x-small){
+	.header__nav-tablet,
+	.header__top-action,
+	.header__bottom-action,
+	.header__top-telephone{
+		display: none;
+	}
+	.header__nav-mobile{
+		display: flex;
+	}
 }
 

@@ -5,6 +5,7 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="./src/scss/style.scss" />
+	<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 	<title>Sunchai</title>
 </head>
 
@@ -25,8 +26,8 @@
 					<div class="header__top-action">
 						<a class="header__top-action-button" href="#">Регистрация</a>
 						<a class="header__top-action-button" href="#">Войти</a>
-
 					</div>
+
 				</div>
 				<div class="header__nav-tablet">
 					<a class="header__top-action-button-tablet" href="#"><img src="./src/assets/icons/Man.svg" alt="Man"></a>
@@ -42,19 +43,27 @@
 					</span>
 					<input type="text" class='header__search-field' placeholder='Поиск товаров'>
 				</div>
+
+				<div class="header__nav-mobile">
+					<a class="header__top-action-button-tablet" href="#"><img src="./src/assets/icons/Man.svg" alt="Man"></a>
+					<img class='header__bottom-action-button-icon' src="./src/assets/icons/CartBlack.svg" alt="Cart">
+				</div>
 				<div class="header__bottom">
 					<div class="header__bottom-menu">
-						<ul class="header__bottom-menu-list">
-							<li><a class='header__bottom-menu-list-item' href="#">Китайский
-									чай <span class="header__bottom-menu-list-item-dropdown"></span> </a> </li>
-							<li><a class='header__bottom-menu-list-item' href="#">Посуда <span
-										class="header__bottom-menu-list-item-dropdown"></span> </a></li>
-							<li><a class='header__bottom-menu-list-item' href="#">Аксессуары для чая <span
-										class="header__bottom-menu-list-item-dropdown"></span> </a></li>
-							<li><a class='header__bottom-menu-list-item' href="#">Околочайное <span
-										class="header__bottom-menu-list-item-dropdown"></span> </a>
-							</li>
-						</ul>
+						<div class="header__bottom-menu">
+
+							<ul class="header__bottom-menu-list">
+								<li><a class='header__bottom-menu-list-item' href="#">Китайский
+										чай <span class="header__bottom-menu-list-item-dropdown"></span> </a> </li>
+								<li><a class='header__bottom-menu-list-item' href="#">Посуда <span
+											class="header__bottom-menu-list-item-dropdown"></span> </a></li>
+								<li><a class='header__bottom-menu-list-item' href="#">Аксессуары для чая <span
+											class="header__bottom-menu-list-item-dropdown"></span> </a></li>
+								<li><a class='header__bottom-menu-list-item' href="#">Околочайное <span
+											class="header__bottom-menu-list-item-dropdown"></span> </a>
+								</li>
+							</ul>
+						</div>
 					</div>
 					<div class="header__bottom-action">
 						<a class="header__bottom-action-button" href="#">Корзина

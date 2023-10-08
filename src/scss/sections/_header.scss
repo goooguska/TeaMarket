@@ -13,7 +13,7 @@
 		@include fonts.text-body-header;
 		color: variables.$headerInfo-color
 	}&-action-button{
-		@include mixins.headerButton
+		@include mixins.headerTopButton
 	}
 }
 .header__search {
@@ -63,24 +63,61 @@
 .header__bottom-menu-list-item {
 	@extend %reset-link;
 	color: variables.$black-color;
-	position: relative;
+	padding-right: 30px;
+	
 }
-.header__bottom-menu-list-item::after{
-	content:url('/src/assets/icons/DropDown.svg');
-	display: block;
-	width: 60px;
-	height: 60px;
-	position: absolute;
 
+// .header__bottom-menu-list-item::after{
+// 	content:'';
+// 	background-image: url('/src/assets/icons/DropDown.svg');
+// 	display: block;
+// 	position: absolute;
+// 	width: 16px;
+//   height: 16px;
+// 	top: 0;
+// 	left: 0;
+// }
+.header__bottom-menu-list-item-dropdown {
+	background-image: url('/src/assets/icons/DropDown.svg');
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding-left: 20px; 
 }
 
 .header__bottom-action {
 	
 }
+.header__bottom-action-button::before{
+	display: block;
+	position: absolute;
+	width: 27px;
+	height: 25px;
+	top: 1px;
+	left: 1px;
+}
+.header__bottom-action-button:nth-child(1)::before{
+	content:'';
+	background-image: url('/src/assets/icons/Cart.svg');
+
+
+}
+.header__bottom-action-button:nth-child(2)::before{
+	content:'';
+	background-image: url('/src/assets/icons/Heart.svg');
+
+
+}
 .header__bottom-action-button {
-	color: variables.$black-color;
+	position: relative;
+	@include mixins.headerBottomButton;
+	color: variables.$secondary-color;
 	@extend %reset-link;
 
+}
+.header__bottom-action-button-count{
+	border-radius: 10px;
+	padding: 8px 15px;
+	background-color: variables.$spanBottomBtn;
 }
 
 

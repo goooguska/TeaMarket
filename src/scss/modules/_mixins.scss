@@ -1,10 +1,17 @@
 @use '/src/scss/modules/fonts';
 @use '/src/scss/modules/variables';
 
-@mixin headerButton {
+@mixin headerTopButton {
 	@include fonts.text-body-header;
 	border-radius: 21px;
 	padding: 9px 20px; 
 	box-shadow: 0px 0px 0px 1px variables.$btnBoxShadow-color; 
 	@extend %reset-link;
+}
+
+@mixin headerBottomButton{
+	border-radius: 10px;
+	background-color: variables.$primary-color;
+	padding: 16px 20px 16px 40px;
+	// padding: 16px 20px;
 }

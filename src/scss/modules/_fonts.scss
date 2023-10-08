@@ -52,9 +52,9 @@
 	
 }
 @mixin text-body-search{
-	@include text-body(16px,400, variables.$input-color);
+	@include text-body(16px,400, variables.$inputBG-color);
   @media (max-width: variables.$vp-x-small) {
-    @include text-body(10px, 400, variables.$input-color);
+    @include text-body(10px, 400, variables.$inputBG-color);
   }
 	
 }

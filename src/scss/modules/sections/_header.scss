@@ -35,7 +35,7 @@
 }
 .header__search {
 	position: relative;
-	
+	margin: 30px auto;
 	max-width: 470px;
 
 }
@@ -47,8 +47,10 @@
 	outline: none;
 	border-radius: 31px;
 	width: 100%;
-	background-color:variables.$input-color ;
+	background-color:variables.$inputBG-color ;
+	color: variables.$inputIcon-color;
 }
+
 .header__search-icon{
 	position: absolute;
 	display: flex;

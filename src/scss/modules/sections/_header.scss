@@ -1,62 +1,86 @@
 @use '/src/scss/modules/fonts';
 @use '/src/scss/modules/variables';
 @use '/src/scss/modules/mixins';
-.header {
-}
-.header__nav {
-}
 .header__top {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-}
-.header__top-telephone {
-
-}
-
-.header__top-telephone-link {
-	display: flex;
-	flex-direction: column;
-	
-	 @include fonts.text-body-telephone;
-}
-.header__top-telephone-link-description {
-	@include fonts.text-body-header;
-	color: variables.$headerInfo-color
-}
-.header__top-logo {
-}
-.logo {
-}
-.header__top-action {
-}
-.header__top-action-button {
-	@include mixins.headerButton
+	&-telephone-link{
+		display: flex;
+		flex-direction: column;
+		@include fonts.text-body-telephone;
+	}&-telephone-link-description{
+		@include fonts.text-body-header;
+		color: variables.$headerInfo-color
+	}&-action-button{
+		@include mixins.headerButton
+	}
 }
 .header__search {
 	position: relative;
 	margin: 30px auto;
 	max-width: 470px;
-
+	&-field{
+		@include fonts.text-body-search;
+		
+		border: none;
+		text-align: center;
+		padding:12px 10px ;
+		outline: none;
+		border-radius: 31px;
+		width: 100%;
+		background-color:variables.$inputBG-color ;
+		color: variables.$inputIcon-color;
+	}&-icon{
+		position: absolute;
+		display: flex;
+		align-items: center;
+		top: 0;
+		bottom: 0;
+		left: 30%;
+		color: variables.$inputIcon-color;
+	}
 }
-.header__search-field {
-	@include fonts.text-body-search;
-	border: none;
-	text-align: center;
-	padding:12px 10px ;
-	outline: none;
-	border-radius: 31px;
-	width: 100%;
-	background-color:variables.$inputBG-color ;
-	color: variables.$inputIcon-color;
-}
 
-.header__search-icon{
-	position: absolute;
+
+
+.header__bottom {
 	display: flex;
-	align-items: center;
-	top: 0;
-	bottom: 0;
-	left: 30%;
-	color: variables.$inputIcon-color;
+	@include fonts.text-body-header;
+	justify-content: space-around
+
 }
+.header__bottom-menu {
+	
+	
+	
+}
+.header__bottom-menu-list {
+	display: flex;
+	@extend %reset-link;
+	
+}
+.header__bottom-menu-list-item {
+	@extend %reset-link;
+	color: variables.$black-color;
+	position: relative;
+}
+.header__bottom-menu-list-item::after{
+	content:url('/src/assets/icons/DropDown.svg');
+	display: block;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+
+}
+
+.header__bottom-action {
+	
+}
+.header__bottom-action-button {
+	color: variables.$black-color;
+	@extend %reset-link;
+
+}
+
+

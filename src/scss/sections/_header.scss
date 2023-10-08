@@ -12,17 +12,21 @@
 	}&-telephone-link-description{
 		@include fonts.text-body-header;
 		color: variables.$headerInfo-color
+	}&-logo{
+		margin: 0 auto;
 	}&-action-button{
 		@include mixins.headerTopButton
 	}
 }
+.header__nav-tablet{
+	display: none;
+}
 .header__search {
 	position: relative;
 	margin: 30px auto;
-	max-width: 470px;
+	max-width: 464px;
 	&-field{
 		@include fonts.text-body-search;
-		
 		border: none;
 		text-align: center;
 		padding:12px 10px ;
@@ -42,82 +46,66 @@
 	}
 }
 
-
-
 .header__bottom {
 	display: flex;
 	@include fonts.text-body-header;
-	justify-content: space-around
+	justify-content: space-around;
+	&-menu-list{
+		display: flex;
+		@extend %reset-link;
+	}&-menu-list-item{
+		@extend %reset-link;
+		color: variables.$black-color;
+		padding-right: 30px;
+	}&-menu-list-item-dropdown{
+		background-image: url('/src/assets/icons/DropDown.svg');
+		background-repeat: no-repeat;
+		background-position: right center;
+		padding-left: 20px; 
+	}&-action-button{
+		position: relative;
+		@include mixins.headerBottomButton;
+		color: variables.$secondary-color;
+		@extend %reset-link;
+	}&-action-button-count{
+		border-radius: 10px;
+		padding: 8px 15px;
+		background-color: variables.$spanBottomBtn;
+	}&-action-button::before{
+		content:'';
+		display: block;
+		position: absolute;
+		width: 27px;
+		height: 25px;
+		top: 12px;
+		left: 20px;
+	}&-action-button:nth-child(1)::before{	
+		background-image: url('/src/assets/icons/Cart.svg');
+	}&-action-button:nth-child(2)::before{
+		background-image: url('/src/assets/icons/Heart.svg');
+	}
+	
+}
+@media (max-width:variables.$vp-medium){
+	.header__bottom-action{
+		display: flex;
+		flex-flow: column wrap;
+	}
+	.header__bottom-action-button:nth-child(2){
+		margin-top: 15px;
+	}
+}
 
-}
-.header__bottom-menu {
-	
-	
-	
-}
-.header__bottom-menu-list {
+@media (max-width:variables.$vp-small){
+	.header__top-action,
+	.header__bottom-action,
+	.header__top-telephone{
+		display: none;
+	}
+	.header__nav-tablet{
 	display: flex;
-	@extend %reset-link;
+}
+
 	
 }
-.header__bottom-menu-list-item {
-	@extend %reset-link;
-	color: variables.$black-color;
-	padding-right: 30px;
-	
-}
-
-// .header__bottom-menu-list-item::after{
-// 	content:'';
-// 	background-image: url('/src/assets/icons/DropDown.svg');
-// 	display: block;
-// 	position: absolute;
-// 	width: 16px;
-//   height: 16px;
-// 	top: 0;
-// 	left: 0;
-// }
-.header__bottom-menu-list-item-dropdown {
-	background-image: url('/src/assets/icons/DropDown.svg');
-	background-repeat: no-repeat;
-	background-position: right center;
-	padding-left: 20px; 
-}
-
-.header__bottom-action {
-	
-}
-.header__bottom-action-button::before{
-	display: block;
-	position: absolute;
-	width: 27px;
-	height: 25px;
-	top: 1px;
-	left: 1px;
-}
-.header__bottom-action-button:nth-child(1)::before{
-	content:'';
-	background-image: url('/src/assets/icons/Cart.svg');
-
-
-}
-.header__bottom-action-button:nth-child(2)::before{
-	content:'';
-	background-image: url('/src/assets/icons/Heart.svg');
-
-
-}
-.header__bottom-action-button {
-	position: relative;
-	@include mixins.headerBottomButton;
-	color: variables.$secondary-color;
-	@extend %reset-link;
-
-}
-.header__bottom-action-button-count{
-	border-radius: 10px;
-	padding: 8px 15px;
-	background-color: variables.$spanBottomBtn;
-}
-
 

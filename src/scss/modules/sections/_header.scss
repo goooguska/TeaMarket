@@ -31,5 +31,30 @@
 .header__top-action {
 }
 .header__top-action-button {
-	@include mixins.headerButton;
+	@include mixins.headerButton
+}
+.header__search {
+	position: relative;
+	
+	max-width: 470px;
+
+}
+.header__search-field {
+	@include fonts.text-body-search;
+	border: none;
+	text-align: center;
+	padding:12px 10px ;
+	outline: none;
+	border-radius: 31px;
+	width: 100%;
+	background-color:variables.$input-color ;
+}
+.header__search-icon{
+	position: absolute;
+	display: flex;
+	align-items: center;
+	top: 0;
+	bottom: 0;
+	left: 30%;
+	color: variables.$inputIcon-color;
 }

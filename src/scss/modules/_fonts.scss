@@ -1,4 +1,4 @@
-@use './variables' as *; //Спросить правильно ли так?
+@use './variables'; 
 @import url('https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic');
 
 
@@ -14,86 +14,86 @@
   
 }
 @mixin text-body-header{
-  @include text-body(14px,400,$black-color);
+  @include text-body(14px,400,variables.$black-color);
 }
 
 @mixin text-headline-h2{
-  @include text-body(42px,400, $black-color);
-  @media (max-width: $vp-small) {
+  @include text-body(42px,400, variables.$black-color);
+  @media (max-width: variables.$vp-small) {
     @include text-body(25px);
   }
-  @media (max-width: $vp-x-small) {
+  @media (max-width: variables.$vp-x-small) {
     @include text-body(16px);
   }
 }
 
 @mixin text-body-h3 {
-  @include text-body(32px,400,$black-color);
-  @media (max-width: $vp-small) {
+  @include text-body(32px,400,variables.$black-color);
+  @media (max-width: variables.$vp-small) {
     @include text-body(23px);
   }
-  @media (max-width: $vp-x-small) {
+  @media (max-width: variables.$vp-x-small) {
     @include text-body(14px);
   }
 
 }
 @mixin text-body-telephone{
-  @include text-body(18px,400,$black-color);
+  @include text-body(18px,400,variables.$black-color);
   @extend %reset-link;
 }
 @mixin text-body-teafind{
-	@include text-body(32px,700,$secondary-color);
-  @media (max-width: $vp-small) {
-    @include text-body(16px,700, $secondary-color );
+	@include text-body(32px,700,variables.$secondary-color);
+  @media (max-width: variables.$vp-small) {
+    @include text-body(16px,700, variables.$secondary-color );
   }
-  @media (max-width: $vp-x-small) {
-    @include text-body(10px,700, $secondary-color);
+  @media (max-width: variables.$vp-x-small) {
+    @include text-body(10px,700, variables.$secondary-color);
   }
 	
 }
 @mixin text-body-search{
-	@include text-body(16px,400, $input-color);
-  @media (max-width: $vp-x-small) {
-    @include text-body(10px, 400, $input-color);
+	@include text-body(16px,400, variables.$input-color);
+  @media (max-width: variables.$vp-x-small) {
+    @include text-body(10px, 400, variables.$input-color);
   }
 	
 }
 @mixin text-body-footer{
-	@include text-body(22px,400,$black-color);
-  @media (max-width: $vp-small) {
+	@include text-body(22px,400,variables.$black-color);
+  @media (max-width: variables.$vp-small) {
     @include text-body(20px);
   }
-  @media (max-width: $vp-x-small) {
+  @media (max-width: variables.$vp-x-small) {
     @include text-body(10px);
   }
 }
 @mixin text-body-p {
-	@include text-body(18px,400,$oppacity-color);
+	@include text-body(18px,400,variables.$oppacity-color);
 
 }
 @mixin text-body-more{
-	@include text-body(18px,400, $primary-color);
+	@include text-body(18px,400, variables.$primary-color);
   @extend %reset-link;
-  @media (max-width: $vp-small) {
+  @media (max-width: variables.$vp-small) {
     @include text-body(15px);
   }
-  @media (max-width: $vp-x-small) {
+  @media (max-width: variables.$vp-x-small) {
     @include text-body(8px);
   }
 	
 }
 @mixin text-body-card{
-	@include text-body(15px,600,$black-color);
-  @media (max-width: $vp-x-small) {
+	@include text-body(15px,600, variables.$black-color);
+  @media (max-width: variables.$vp-x-small) {
     @include text-body(10px);
   }
 }
 @mixin text-body-footer-p{
-	@include text-body(32px,400,$black-color);
-  @media (max-width: $vp-small) {
+	@include text-body(32px,400,variables.$black-color);
+  @media (max-width: variables.$vp-small) {
     @include text-body(25px);
   }
-  @media (max-width: $vp-x-small) {
+  @media (max-width: variables.$vp-x-small) {
     @include text-body(10px);
   }
 }

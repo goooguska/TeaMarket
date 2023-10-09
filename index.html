@@ -1,56 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./src/scss/style.scss" />
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+		<title>Sunchai</title>
+	</head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="./src/scss/style.scss" />
-	<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-	<title>Sunchai</title>
-</head>
-
-<body class="page">
-	<header class="header">
-		<div class="container">
-			<nav class="header__nav">
-				<div class="header__top">
-					<div class="header__top-telephone">
-						<a class="header__top-telephone-link" href="#">
-							<span class="header__top-telephone-link-description">Бесплатный звонок</span>
-							8 800 080 5011
+	<body class="page">
+		<header class="header">
+			<div class="container">
+				<nav class="header__nav">
+					<div class="header__top">
+						<div class="header__top-telephone">
+							<a class="header__top-telephone-link" href="#">
+								<span class="header__top-telephone-link-description"
+									>Бесплатный звонок</span
+								>
+								8 800 080 5011
+							</a>
+						</div>
+						<a class="header__top-logo logo" href="#">
+							<img src="./src/assets/icons/Logo.svg" alt="logo" />
 						</a>
+						<div class="header__top-action">
+							<a class="header__top-action-button" href="#">Регистрация</a>
+							<a class="header__top-action-button" href="#">Войти</a>
+						</div>
 					</div>
-					<a class="header__top-logo logo" href="#">
-						<img src="./src/assets/icons/Logo.svg" alt="logo" />
-					</a>
-					<div class="header__top-action">
-						<a class="header__top-action-button" href="#">Регистрация</a>
-						<a class="header__top-action-button" href="#">Войти</a>
+					<div class="header__nav-tablet">
+						<a class="header__top-action-button-tablet" href="#"
+							><img src="./src/assets/icons/Man.svg" alt="Man"
+						/></a>
+						<img
+							class="header__bottom-action-button-icon"
+							src="./src/assets/icons/CartBlack.svg"
+							alt="Cart"
+						/>
+						<img
+							class="header__bottom-action-button-icon"
+							src="./src/assets/icons/HeartBlack.svg"
+							alt="Heart"
+						/>
+					</div>
+					<div class="header__search">
+						<span class="header__search-icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								fill="#989DB5"
+								viewBox="0 0 16 16"
+							>
+								<path
+									d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+								/>
+							</svg>
+						</span>
+						<input
+							type="text"
+							class="header__search-field"
+							placeholder="Поиск товаров"
+						/>
 					</div>
 
-				</div>
-				<div class="header__nav-tablet">
-					<a class="header__top-action-button-tablet" href="#"><img src="./src/assets/icons/Man.svg" alt="Man"></a>
-					<img class='header__bottom-action-button-icon' src="./src/assets/icons/CartBlack.svg" alt="Cart">
-					<img class='header__bottom-action-button-icon' src="./src/assets/icons/HeartBlack.svg" alt="Heart">
-				</div>
-				<div class="header__search">
-					<span class='header__search-icon'>
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill='#989DB5' viewBox="0 0 16 16">
-							<path
-								d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-						</svg>
-					</span>
-					<input type="text" class='header__search-field' placeholder='Поиск товаров'>
-				</div>
+					<div class="header__nav-mobile">
+						<a class="header__top-action-button-tablet" href="#"
+							><img src="./src/assets/icons/Man.svg" alt="Man"
+						/></a>
+						<img
+							class="header__bottom-action-button-icon"
+							src="./src/assets/icons/CartBlack.svg"
+							alt="Cart"
+						/>
+					</div>
+					<div class="header__bottom">
+						<div class="header__bottom-dropdown">
+							<div class="header__bottom-dropdown-menu" data-dropdown>
+								<button
+									class="header__bottom-dropdown-menu-button"
+									data-dropdown-button
+								>
+									Китайский чай
+								</button>
+								<div class="header__bottom-dropdown-menu-list">
+									<a href="" class="header__bottom-dropdown-menu-list-link"
+										>Пуэры</a
+									>
+									<a href="" class="header__bottom-dropdown-menu-list-link"
+										>Улуны</a
+									>
+									<a href="" class="header__bottom-dropdown-menu-list-link"
+										>Зелёный чай</a
+									>
+									<a href="" class="header__bottom-dropdown-menu-list-link"
+										>Красный чай</a
+									>
+									<a href="" class="header__bottom-dropdown-menu-list-link"
+										>Жёлтый чай</a
+									>
+									<a href="" class="header__bottom-dropdown-menu-list-link"
+										>Белый чай</a
+									>
+								</div>
+							</div>
+							<div class="header__bottom-dropdown-menu" data-dropdown>
+								<button
+									class="header__bottom-dropdown-menu-button"
+									data-dropdown-button
+								>
+									Посуда
+								</button>
+								<div class="header__bottom-dropdown-menu-list">
+									<a href="" class="header__bottom-dropdown-menu-list-link"
+										>Чайники</a
+									>
+									<a href="" class="header__bottom-dropdown-menu-list-link"
+										>Пиалы</a
+									>
+									<a href="" class="header__bottom-dropdown-menu-list-link"
+										>Гайвани</a
+									>
+									<a href="" class="header__bottom-dropdown-menu-list-link"
+										>Чабани</a
+									>
+									<a href="" class="header__bottom-dropdown-menu-list-link"
+										>Чахаи</a
+									>
+								</div>
+							</div>
+							<div class="header__bottom-dropdown-menu" data-dropdown>
+								<button
+									class="header__bottom-dropdown-menu-button"
+									data-dropdown-button
+								>
+									Аксессуары для чая
+								</button>
+								<div class="header__bottom-dropdown-menu-list">
+									<a href="" class="header__bottom-dropdown-menu-list-link"
+										>Чахэ</a
+									>
+									<a href="" class="header__bottom-dropdown-menu-list-link"
+										>Чайные фигурки</a
+									>
+									<a href="" class="header__bottom-dropdown-menu-list-link"
+										>Чайницы и хранение чая</a
+									>
+									<a href="" class="header__bottom-dropdown-menu-list-link"
+										>Инструменты, кисточки, шила</a
+									>
+								</div>
+							</div>
+							<div class="header__bottom-dropdown-menu" data-dropdown>
+								<button
+									class="header__bottom-dropdown-menu-button"
+									data-dropdown-button
+								>
+									Околочайное
+								</button>
+								<div class="header__bottom-dropdown-menu-list">
+									<a href="" class="header__bottom-dropdown-menu-list-link"
+										>Благовония</a
+									>
+									<a href="" class="header__bottom-dropdown-menu-list-link"
+										>Фигурки из дерева</a
+									>
+									<a href="" class="header__bottom-dropdown-menu-list-link"
+										>Браслеты и чётки</a
+									>
+									<a href="" class="header__bottom-dropdown-menu-list-link"
+										>Декор пространства</a
+									>
+									<a href="" class="header__bottom-dropdown-menu-list-link"
+										>Литература</a
+									>
+								</div>
+							</div>
+						</div>
+						<div class="header__bottom-action">
+							<a class="header__bottom-action-button" href="#"
+								>Корзина
 
-				<div class="header__nav-mobile">
-					<a class="header__top-action-button-tablet" href="#"><img src="./src/assets/icons/Man.svg" alt="Man"></a>
-					<img class='header__bottom-action-button-icon' src="./src/assets/icons/CartBlack.svg" alt="Cart">
-				</div>
-				<div class="header__bottom">
-					<div class="header__bottom-menu">
-						<div class="header__bottom-menu">
+								<span class="header__bottom-action-button-count">0</span></a
+							>
+
+							<a class="header__bottom-action-button" href="#"
+								>Избранное
+
+								<span class="header__bottom-action-button-count">0</span></a
+							>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<script type="module" src="/src/js/main.js"></script>
+		<script src="./src/js/index.js"></script>
+		<script src="./src/js/teacard.js"></script>
+		<script src="./src/js/slider.js"></script>
+	</body>
+</html>
+
+<!-- <div class="header__bottom-menu">
 
 							<ul class="header__bottom-menu-list">
 								<li><a class='header__bottom-menu-list-item' href="#">Китайский
@@ -63,27 +219,4 @@
 											class="header__bottom-menu-list-item-dropdown"></span> </a>
 								</li>
 							</ul>
-						</div>
-					</div>
-					<div class="header__bottom-action">
-						<a class="header__bottom-action-button" href="#">Корзина
-
-							<span class="header__bottom-action-button-count">0</span></a>
-
-						<a class="header__bottom-action-button" href="#">Избранное
-
-							<span class="header__bottom-action-button-count">0</span></a>
-
-					</div>
-				</div>
-			</nav>
-		</div>
-	</header>
-
-	<script type="module" src="/src/js/main.js"></script>
-	<script src="./src/js/index.js"></script>
-	<script src="./src/js/teacard.js"></script>
-	<script src="./src/js/slider.js"></script>
-</body>
-
-</html>
+						</div> -->

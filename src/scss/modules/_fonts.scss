@@ -18,6 +18,12 @@
   @include text-body(14px,400,variables.$black-color);
   
 }
+@mixin text-body-dropdown{
+  @include text-body(14px,400,variables.$black-color);
+  @media (max-width: variables.$vp-small) {
+    @include text-body(12px,400,variables.$black-color);
+  }
+}
 
 @mixin text-headline-h2{
   @include text-body(42px,400, variables.$black-color);

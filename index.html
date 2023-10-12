@@ -1,15 +1,154 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SunChai</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./src/scss/style.scss" />
+	<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+	<title>Sunchai</title>
 </head>
 
-<body>
-  <div id="app"></div>
-  <script type="module" src="/src/js/main.js"></script>
+<body class="page">
+	<header class="header">
+		<div class="container">
+			<nav class="header__nav">
+				<div class="header__top">
+					<div class="header__top-telephone">
+						<a class="header__top-telephone-link" href="#">
+							<span class="header__top-telephone-link-description">Бесплатный звонок</span>
+							8 800 080 5011
+						</a>
+					</div>
+					<a class="header__top-logo logo" href="#">
+						<img src="./src/assets/icons/Logo.svg" alt="logo" />
+					</a>
+					<div class="header__top-action">
+						<a class="header__top-action-button" href="#">Регистрация</a>
+						<a class="header__top-action-button" href="#">Войти</a>
+					</div>
+				</div>
+				<div class="header__nav-tablet">
+					<a class="header__top-action-button-tablet" href="#"><img src="./src/assets/icons/Man.svg" alt="Man" /></a>
+					<img class="header__bottom-action-button-icon" src="./src/assets/icons/CartBlack.svg" alt="Cart" />
+					<img class="header__bottom-action-button-icon" src="./src/assets/icons/HeartBlack.svg" alt="Heart" />
+				</div>
+				<div class="header__nav-mobile">
+					<div class="header__burger">
+						<span class="header__burger-link"></span>
+
+					</div>
+
+					<div class="header__search">
+
+						<img class="header__search-icon" src="./src/assets/icons/Search.svg" alt="search">
+						<input type="text" class="header__search-field" placeholder="Поиск товаров" />
+					</div>
+
+					<div class="header__nav-mobile-action">
+						<a class="header__top-action-button-tablet" href="#"><img src="./src/assets/icons/Man.svg" alt="Man" /></a>
+						<a class="header__bottom-action-button-tablet" href="#"><img src="./src/assets/icons/CartBlack.svg"
+								alt="Cart" /></a>
+
+					</div>
+				</div>
+
+
+
+				<div class="header__bottom">
+					<div class="header__bottom-dropdown">
+						<div class="header__bottom-dropdown-menu">
+
+							<button class="header__bottom-dropdown-menu-button">
+								Китайский чай
+								<span class='bx bx-chevron-down'> </span></button>
+
+
+							<ul class="header__bottom-dropdown-menu-list">
+								<li class='header__bottom-dropdown-menu-list-item'><a href="#"
+										class="header__bottom-dropdown-menu-list-link">Пуэры</a></li>
+								<li class='header__bottom-dropdown-menu-list-item'><a href="#"
+										class="header__bottom-dropdown-menu-list-link">Улуны</a> </li>
+								<li class='header__bottom-dropdown-menu-list-item'><a href="#"
+										class="header__bottom-dropdown-menu-list-link">Зелёный чай</a> </li>
+								<li class='header__bottom-dropdown-menu-list-item'><a href="#"
+										class="header__bottom-dropdown-menu-list-link">Красный чай</a></li>
+								<li class='header__bottom-dropdown-menu-list-item'><a href="#"
+										class="header__bottom-dropdown-menu-list-link">Жёлтый чай</a> </li> </a>
+								<li class='header__bottom-dropdown-menu-list-item'><a href="#"
+										class="header__bottom-dropdown-menu-list-link">Белый чай</a></li>
+							</ul>
+						</div>
+						<div class="header__bottom-dropdown-menu">
+							<button class="header__bottom-dropdown-menu-button">
+								Посуда
+								<span class='bx bx-chevron-down'> </span></button>
+							<ul class="header__bottom-dropdown-menu-list">
+								<li class='header__bottom-dropdown-menu-list-item'><a href="#"
+										class="header__bottom-dropdown-menu-list-link">Чайники</a></li>
+								<li class='header__bottom-dropdown-menu-list-item'><a href="#"
+										class="header__bottom-dropdown-menu-list-link">Пиалы</a> </li>
+								<li class='header__bottom-dropdown-menu-list-item'><a href="#"
+										class="header__bottom-dropdown-menu-list-link">Гайвани</a> </li>
+								<li class='header__bottom-dropdown-menu-list-item'><a href="#"
+										class="header__bottom-dropdown-menu-list-link">Чабани</a></li>
+								<li class='header__bottom-dropdown-menu-list-item'><a href="#"
+										class="header__bottom-dropdown-menu-list-link">Чахаи</a> </li> </a>
+
+							</ul>
+						</div>
+						<div class="header__bottom-dropdown-menu">
+							<button class="header__bottom-dropdown-menu-button">
+								Аксессуары для чая
+								<span class='bx bx-chevron-down'> </span></button>
+							<ul class="header__bottom-dropdown-menu-list">
+								<li class='header__bottom-dropdown-menu-list-item'><a href="#"
+										class="header__bottom-dropdown-menu-list-link">Чахэ</a></li>
+								<li class='header__bottom-dropdown-menu-list-item'><a href="#"
+										class="header__bottom-dropdown-menu-list-link">Чайные фигурки</a> </li>
+								<li class='header__bottom-dropdown-menu-list-item'><a href="#"
+										class="header__bottom-dropdown-menu-list-link">Чайницы и хранение чая</a> </li>
+								<li class='header__bottom-dropdown-menu-list-item'><a href="#"
+										class="header__bottom-dropdown-menu-list-link">Инструменты, кисточки, шила</a></li>
+
+							</ul>
+						</div>
+						<div class="header__bottom-dropdown-menu">
+							<button class="header__bottom-dropdown-menu-button">
+								Околочайное
+								<span class='bx bx-chevron-down'> </span></button>
+							<ul class="header__bottom-dropdown-menu-list">
+								<li class='header__bottom-dropdown-menu-list-item'><a href="#"
+										class="header__bottom-dropdown-menu-list-link">Благовония</a></li>
+								<li class='header__bottom-dropdown-menu-list-item'><a href="#"
+										class="header__bottom-dropdown-menu-list-link">Фигурки из дерева</a> </li>
+								<li class='header__bottom-dropdown-menu-list-item'><a href="#"
+										class="header__bottom-dropdown-menu-list-link">Браслеты и чётки</a> </li>
+								<li class='header__bottom-dropdown-menu-list-item'><a href="#"
+										class="header__bottom-dropdown-menu-list-link">Декор пространства</a></li>
+								<li class='header__bottom-dropdown-menu-list-item'><a href="#"
+										class="header__bottom-dropdown-menu-list-link">Литература</a> </li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="header__bottom-action">
+						<a class="header__bottom-action-button" href="#">Корзина
+
+							<span class="header__bottom-action-button-count">0</span></a>
+
+						<a class="header__bottom-action-button" href="#">Избранное
+
+							<span class="header__bottom-action-button-count">0</span></a>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<script type="module" src="/src/js/main.js"></script>
+	<script src="./src/js/index.js"></script>
+	<script src="./src/js/teacard.js"></script>
+	<script src="./src/js/slider.js"></script>
 </body>
 
 </html>

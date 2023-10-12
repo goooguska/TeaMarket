@@ -10,6 +10,10 @@
 		flex-direction: column;
 		@include fonts.text-body-telephone;
 	}
+	&-telephone-link:hover{
+		color: variables.$primary-color
+
+	}
 	&-telephone-link-description {
 		@include fonts.text-body-header;
 		color: variables.$headerInfo-color;
@@ -19,6 +23,9 @@
 	}
 	&-action-button {
 		@include mixins.headerTopButton;
+	}
+	&-action-button:hover{
+		color: variables.$primary-color
 	}
 }
 .header__nav-mobile-action,

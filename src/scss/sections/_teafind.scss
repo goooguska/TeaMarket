@@ -1,39 +1,53 @@
-@import 'base.scss';
+@use '/src/scss/modules/fonts';
+@use '/src/scss/modules/variables';
+@use '/src/scss/modules/mixins';
 .teafind {
+	margin-top: 50px;
 }
 
-.teafind-content {
-	@include flex-around;
-}
-.teafind-content__sidebar {
-	background-color: $primary-color;
-	@include fonts;
-	border-radius: 14px;
-	width: 276px;
-}
-.teafind-content__sidebar-title {
-	padding: 50px 17px;
-}
-.teafind-content__sidebar-text {
-	margin: 0 auto;
-	width: 200px; //?
-}
-.teafind-content__sidebar-more {
-	margin: 75px auto;
-	@include moreButton;
-}
-.teafind-content__swiper {
+.teafind__content {
 	display: flex;
+	justify-content: space-around;
 }
 
-.teafind-content__swiper-slide:hover {
-	@include cardHover;
+.teafind__content-sidebar {
+	background-color: variables.$primary-color;
+	border-radius: 14px;
+	padding: 50px 16px;
+	max-width:276px;
+	text-align: center;
+
 }
-.teafind-swiper__button-next .teafind-swiper__button-prev {
-	right: 140px !important; //?
-	left: auto;
+.teafind__content-sidebar-title {
+	@include fonts.text-body-teafind;
+	color:variables.$secondary-color;
 }
-.teafind-swiper__button-prev .teafind-swiper__button-next {
-	left: 140px !important; //?
-	right: auto;
+.teafind__conten-sidebar-text {
+	@include fonts.text-teafind-sidebar ;
+	padding: 68px 0;
+	color: variables.$oppacity-color;
+
+}
+.teafind__content-sidebar-more {
+	@include mixins.buttonMore;
+}
+.teafind__content-sidebar-more:hover{
+	@include mixins.buttonMoreHover;
+}
+.teafind__content-slider {
+	display: flex;
+	// flex-flow: column wrap;
+}
+.teafind__content-slider-slide:hover {
+	box-shadow: 0px 10px 20px 1px variables.$BoxShadow-color; 
+	border-radius: 14px;
+}
+.teafind__content-slider-slide-item {
+
+}
+.teafind__content-slider-slide {
+}
+.teafind__slider-button-next {
+}
+.teafind__slider-button-prev {
 }

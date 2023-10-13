@@ -1,4 +1,4 @@
-@use './variables'; 
+@use '/src/scss/modules/variables';
 @import url('https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic');
 
 
@@ -75,11 +75,11 @@
     @include text-body(10px);
   }
 }
-@mixin text-body-p {
+@mixin text-teafind-sidebar {
 	@include text-body(18px,400,variables.$oppacity-color);
 
 }
-@mixin text-body-more{
+@mixin text-body-buttonMore{
 	@include text-body(18px,400, variables.$primary-color);
   @extend %reset-link;
   @media (max-width: variables.$vp-small) {

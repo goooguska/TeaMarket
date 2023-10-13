@@ -16,7 +16,7 @@
 	}
 	&-telephone-link-description {
 		@include fonts.text-body-header;
-		color: variables.$headerInfo-color;
+		color: variables.$info-color;
 	}
 	&-logo {
 		margin: 0 auto;

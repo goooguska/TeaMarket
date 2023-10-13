@@ -21,22 +21,22 @@
 
 .teafind__content-sidebar-title {
 	@include fonts.text-body-teafind;
-	color:variables.$secondary-color;
+
 }
-.teafind__conten-sidebar-text {
+.teafind__content-sidebar-text {
 	@include fonts.text-teafind-sidebar ;
 	padding: 68px 0;
-	color: variables.$oppacity-color;
 
 }
 .teafind__content-sidebar-more {
+	
 	@include mixins.buttonMore;
 }
 .teafind__content-sidebar-more:hover{
 	@include mixins.buttonMoreHover;
 }
 .teafind__content-slider {
-	display: flex;
+	margin: 0 auto;
 	width: 780px;
 	overflow: hidden;
 
@@ -59,13 +59,35 @@
 }
 .teafind__slider-button-prev,
 .teafind__slider-button-next {
-	z-index: 5;
+
 	cursor: pointer;
 	background: none;
 	border: none;
 }
+.teafind__slider-button-icon{
+	width: 39px;
+	height: 39px;
+}
+.teafind__slider{
+	display: flex;
+}
 @media (max-width: variables.$vp-medium){
-	// .teafind__content {
-	// 	display: block;
-	// }
+	.teafind__content {
+		display: block;
+	}
+	.teafind__content-sidebar{
+		margin: 0 auto;
+		padding: 20px 32px;
+		width: 360px;
+	}
+	.teafind__content-sidebar-text{
+		display: none;
+	}
+	.teafind__content-sidebar-more{
+		
+	}
+	.aaa{
+		display: flex;
+	}
+
 }

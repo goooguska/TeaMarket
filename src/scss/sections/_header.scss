@@ -10,9 +10,8 @@
 		flex-direction: column;
 		@include fonts.text-body-telephone;
 	}
-	&-telephone-link:hover{
-		color: variables.$primary-color
-
+	&-telephone-link:hover {
+		color: variables.$primary-color;
 	}
 	&-telephone-link-description {
 		@include fonts.text-body-header;
@@ -24,8 +23,8 @@
 	&-action-button {
 		@include mixins.headerTopButton;
 	}
-	&-action-button:hover{
-		color: variables.$primary-color
+	&-action-button:hover {
+		color: variables.$primary-color;
 	}
 }
 .header__nav-mobile-action,
@@ -63,22 +62,23 @@
 	@include fonts.text-body-header;
 	justify-content: space-around;
 	align-items: center;
-	&-dropdown{
+	&-dropdown {
 		display: flex;
 		align-items: center;
 	}
-	&-dropdown-menu{
+	&-dropdown-menu {
 		padding-right: 1rem;
 		position: relative;
+		z-index: 2;
 	}
-	&-dropdown-menu-button{
+	&-dropdown-menu-button {
 		background: none;
 		border: none;
 		@include fonts.text-body-header;
 		cursor: pointer;
 		padding: 6px;
 	}
-	&-dropdown-menu-list{
+	&-dropdown-menu-list {
 		@extend %reset-link;
 		padding-top: 20px;
 		width: 143px;
@@ -94,10 +94,10 @@
 		padding-bottom: 20px;
 		@include fonts.text-body-dropdown;
 	}
-	&-dropdown-menu-list-link{
+	&-dropdown-menu-list-link {
 		@extend %reset-link;
 	}
-	&-dropdown-menu-list-link:hover{
+	&-dropdown-menu-list-link:hover {
 		color: variables.$primary-color;
 	}
 	&-action-button {
@@ -139,18 +139,17 @@
 	visibility: visible;
 	pointer-events: auto;
 }
-.header__bottom-dropdown .active{
+.header__bottom-dropdown .active {
 	display: block;
 }
 
-.header__burger{
-	
+.header__burger {
 	display: none;
 	cursor: pointer;
 	max-width: 25px;
 	&-link,
 	&-link::before,
-	&-link::after{
+	&-link::after {
 		display: flex;
 		flex-direction: column;
 		position: absolute;
@@ -159,38 +158,35 @@
 		background-color: variables.$primary-color;
 		transition: 0.4s;
 	}
-	&-link.active{
+	&-link.active {
 		background-color: variables.$secondary-color;
 	}
-	&-link.active::after{ 	
+	&-link.active::after {
 		top: 0;
-		transform: rotate(-45deg)
+		transform: rotate(-45deg);
 	}
-	&-link.active::before{
+	&-link.active::before {
 		top: 0;
 		transform: rotate(45deg);
 	}
-	&-link::before{
+	&-link::before {
 		content: '';
 		top: -6px;
 	}
-	&-link::after{
+	&-link::after {
 		content: '';
 		top: 6px;
-		
 	}
 }
 
-
-
 @media (max-width: variables.$vp-medium) {
-	.header__bottom{
+	.header__bottom {
 		align-items: start;
-		&-action{
+		&-action {
 			display: flex;
 			flex-flow: column wrap;
 		}
-		&-action-button:nth-child(2){
+		&-action-button:nth-child(2) {
 			margin-top: 15px;
 		}
 	}
@@ -209,41 +205,41 @@
 		max-width: 137px;
 	}
 	.header__bottom-dropdown-menu-list {
-		padding-top:10px ;
+		padding-top: 10px;
 	}
-	.header__bottom-dropdown-menu-list .header__bottom-dropdown-menu-list-item{
+	.header__bottom-dropdown-menu-list .header__bottom-dropdown-menu-list-item {
 		padding-bottom: 10px;
 	}
 }
 @media (max-width: variables.$vp-x-small) {
-	.header__nav-mobile{
+	.header__nav-mobile {
 		display: flex;
 		align-items: center;
 		margin: 0 auto;
 		max-width: 262px;
 	}
 	.header__bottom-dropdown.overlay,
-	.header__burger{
+	.header__burger {
 		display: block;
 	}
-	.header__bottom-dropdown-menu-button{
+	.header__bottom-dropdown-menu-button {
 		border: 1px solid variables.$primary-color;
 		min-width: 200px;
 		border-radius: 14px;
 		margin-bottom: 10px;
-		padding: 7px ;
+		padding: 7px;
 		text-align: left;
 	}
-	.header__bottom-dropdown-menu-button::after{
+	.header__bottom-dropdown-menu-button::after {
 		border-top: 2px solid variables.$black-color;
-		border-right: 2px solid variables.$black-color ;
+		border-right: 2px solid variables.$black-color;
 		transform: rotate(-135deg);
 	}
-	.header__bottom-dropdown{
+	.header__bottom-dropdown {
 		margin-top: 42px;
 		background: none;
 		z-index: 1;
-		&-menu{
+		&-menu {
 			display: flex;
 			align-items: center;
 		}
@@ -261,19 +257,18 @@
 		display: flex;
 		align-items: center;
 	}
-	.header__search{
+	.header__search {
 		display: flex;
 		justify-content: center;
 		margin: 10px auto;
-		&-field{
+		&-field {
 			max-width: 200px;
 		}
-		&-icon{
+		&-icon {
 			height: 11px;
 			width: 11px;
 			top: 35%;
-   		left: 10%;
-
+			left: 10%;
 		}
 	}
 }

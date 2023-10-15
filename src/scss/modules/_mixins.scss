@@ -16,18 +16,12 @@
 
 }
 @mixin buttonMore{
-	@include fonts.text-body-buttonMore;
+	@include fonts.text-bodyHero-buttonMore;
 	display: inline-block;
 	color: variables.$secondary-color ;
 	border-radius: 10px;
 	padding: 16px 45px; 
 	border: 1.5px solid variables.$secondary-color ;
-	@media (max-width: variables.$vp-medium) {
-    @include fonts.text-body(12px,400, variables.$secondary-color );
-		margin-top: 20px;
-		padding: 8px 23px;
-		
-  }
 
 }
 @mixin buttonMoreHover{

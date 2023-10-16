@@ -65,6 +65,9 @@ p{
 		width: 17px;
 		height: 17px;
 	}
+	.more-popup-card{
+		margin:5% ;
+	}
 
 }
 

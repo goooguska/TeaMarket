@@ -3,6 +3,7 @@
 @use '/src/scss/modules/mixins';
 
 .teafind{
+
 	margin-top: 50px;
 	&__slider{
 		display: flex;
@@ -13,6 +14,7 @@
 		justify-content: space-around;
 	}
 	&__content-sidebar{
+		
 		background-color: variables.$primary-color;
 		border-radius: 14px;
 		padding: 55px 16px;
@@ -28,6 +30,7 @@
 	}
 	&__content-sidebar-more{
 		@include mixins.buttonMore;
+
 	}
 	&__content-sidebar-more:hover{
 		@include mixins.buttonMoreHover;
@@ -58,6 +61,15 @@
 	}
 	
 }
+.none{
+	display: none;
+}
+.more__popup{
+	@include mixins.morePopup;
+}
+
+
+
 @media (max-width: variables.$vp-medium){
 	.teafind__content {
 		display: block;
@@ -76,6 +88,10 @@
 	}
 	.teafind__slider{
 		display: flex;
+	}
+	.more__popup-card-img{
+		width: 17px;
+		height: 17px;
 	}
 
 }

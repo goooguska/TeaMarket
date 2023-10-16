@@ -28,3 +28,43 @@
 	color: variables.$oppacity-color ;
 	border: 1.5px solid variables.$oppacity-color ;
 }
+@mixin morePopup {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	background-color: variables.$BoxShadow-color;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+	padding: 0 20px;
+	.more__popup-card{
+		width: 100%;
+		max-width: 459px;
+		border-radius: 14px;
+		padding: 10px 39px;
+		background-color: variables.$secondary-color;
+		margin: auto;
+		justify-content: center;
+		margin-top: 15%;
+		text-align: center;
+	}
+	.more__popup-card-title{
+		background-color: variables.$primary-color ;
+		@include fonts.text-body-popup-title;
+	
+		border-radius: 14px;
+		padding: 12px 27px;
+		display: inline-block;
+	}
+	.more__popup-card-img{
+		width: 24px;
+		height: 24px;
+		
+	}
+	.more__popup-card-text{
+		margin-top: 10px;
+		@include fonts.text-body-popup;
+	
+	}
+	
+}

@@ -64,9 +64,6 @@
 .none{
 	display: none;
 }
-.more__popup{
-	// @include mixins.morePopup;
-}
 
 
 
@@ -89,14 +86,6 @@
 	.teafind__slider{
 		display: flex;
 	}
-	.more__popup-card-img{
-		width: 17px;
-		height: 17px;
-	}
-	.more-popup{
-		@include fonts.text-body-popup
-	}
-
 }
 @media (max-width: variables.$vp-x-small){
 	.teafind__content-sidebar{
@@ -105,7 +94,6 @@
     width: 225px;
 	}
 	.teafind__content-sidebar-more{
-
 		margin-top: 4px;
 	}
 }

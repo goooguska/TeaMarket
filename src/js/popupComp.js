@@ -1,5 +1,3 @@
-
-
 const popup = document.createElement('popup');
 popup.innerHTML= `
 <style>
@@ -11,10 +9,8 @@ popup.innerHTML= `
 	width: 100%;
 	height: 100%;
 	z-index: 5;
-	padding: 0 20px;
 }
 .more-popup-card{
-	width: 100%;
 	max-width: 459px;
 	border-radius: 14px;
 	padding: 10px 39px;
@@ -38,10 +34,37 @@ img{
 	height: 24px;
 }
 p{
-	margin-top: 10px;
 	font-size:16px;
 	font-weight:600;
 	color:#303030;
+
+}
+@media (max-width: 768px){
+	span{
+		font-size:14px;
+		font-weight:600;
+	}
+	p{
+		font-size:12px;
+		font-weight:600;
+	}
+
+
+}
+@media (max-width: 576px){
+	span{
+		font-size:10px;
+		font-weight:600;
+		
+	}
+	p{
+		font-size:10px;
+		font-weight:600;
+	}
+	img{
+		width: 17px;
+		height: 17px;
+	}
 
 }
 

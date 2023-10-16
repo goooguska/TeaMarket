@@ -112,7 +112,7 @@
 @mixin text-body-card{
 	@include text-body(15px,600, variables.$black-color);
   @media (max-width: variables.$vp-x-small) {
-    @include text-body(10px);
+    @include text-body(10px,600,variables.$black-color);
   }
 }
 @mixin text-body-footer-p{

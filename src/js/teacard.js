@@ -10,6 +10,9 @@ template.innerHTML= `
 p{
 	color:#000;
 }
+
+}
+
 </style>
 	<div class="tea-card">
 	<img id='tea'/>
@@ -19,6 +22,7 @@ p{
 	<p id='weight'></p>
 
 	</div>
+
 `
 class teaCard extends HTMLElement {
 	constructor(){

@@ -65,7 +65,7 @@
 	display: none;
 }
 .more__popup{
-	@include mixins.morePopup;
+	// @include mixins.morePopup;
 }
 
 
@@ -92,6 +92,9 @@
 	.more__popup-card-img{
 		width: 17px;
 		height: 17px;
+	}
+	.more-popup{
+		@include fonts.text-body-popup
 	}
 
 }

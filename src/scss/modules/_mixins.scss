@@ -29,7 +29,7 @@
 	border: 1.5px solid variables.$oppacity-color ;
 }
 @mixin morePopup {
-	position: absolute;
+	position: fixed;
 	top: 0%;
 	left: 0%;
 	background-color: variables.$BoxShadow-color;
@@ -68,3 +68,17 @@
 	}
 	
 }
+
+
+
+// .more-popup{
+// 	position: fixed;
+// 	top: 0%;
+// 	left: 0%;
+// 	background-color: variables.$BoxShadow-color;
+// 	width: 100%;
+// 	height: 100%;
+// 	z-index: 5;
+// 	padding: 0 20px;
+	
+// }

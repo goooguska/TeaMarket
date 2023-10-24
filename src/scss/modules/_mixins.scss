@@ -27,4 +27,5 @@
 @mixin buttonMoreHover{
 	color: variables.$oppacity-color ;
 	border: 1.5px solid variables.$oppacity-color ;
+	cursor: pointer;
 }

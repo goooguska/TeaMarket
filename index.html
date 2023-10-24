@@ -94,7 +94,6 @@
 										class="header__bottom-dropdown-menu-list-link">Чабани</a></li>
 								<li class='header__bottom-dropdown-menu-list-item'><a href="#"
 										class="header__bottom-dropdown-menu-list-link">Чахаи</a> </li> </a>
-
 							</ul>
 						</div>
 						<div class="header__bottom-dropdown-menu">
@@ -110,7 +109,6 @@
 										class="header__bottom-dropdown-menu-list-link">Чайницы и хранение чая</a> </li>
 								<li class='header__bottom-dropdown-menu-list-item'><a href="#"
 										class="header__bottom-dropdown-menu-list-link">Инструменты, кисточки, шила</a></li>
-
 							</ul>
 						</div>
 						<div class="header__bottom-dropdown-menu">
@@ -131,7 +129,6 @@
 							</ul>
 						</div>
 					</div>
-
 					<div class="header__bottom-action">
 						<a class="header__bottom-action-button" href="#">Корзина
 
@@ -145,10 +142,73 @@
 			</nav>
 		</div>
 	</header>
+	<main>
+		<section class='teafind'>
+			<div class="container">
+				<div class="teafind__content">
+					<div class="teafind__content-sidebar">
+						<h3 class='teafind__content-sidebar-title'>Рубрика "Чай-находка"</h3>
+						<p class='teafind__content-sidebar-text'>Это особая подборка чаев, отобранная нашими титестерами </p>
+						<a class='teafind__content-sidebar-more'> Подробнее </a>
+						<more-popup class='more-popup none' title='Рубрика "Чай-находка"' close='./src/assets/icons/closePopup.svg'
+							text='"Чай-находка" - гордость ассортимента. Это особая подборка чаев, отобранная титестерами Дао, и позиций, которые собирают безупречную обратную связь от покупателей. Принцип попадания в эту подборку прост.Чаще это позиции, которые открывают новый чайный опыт, проявляют редкий акусоароматический профиль. Реже китайский чай, который может быть узнаваемым и привычным, но оправдывающий свою цену. Если вы пока не знакомы с нами, ассортиментом магазина, критериями качества, ценовой политикой, знакомство с чаем из этой подборки станет удачным стартом.'>
+						</more-popup>
+					</div>
+					<div class="teafind__slider">
+						<button class="teafind__slider-button-prev"><img class='teafind__slider-button-icon'
+								src="./src/assets/icons/arrowBtnLeft.svg" alt="#"></button>
+
+						<div class="teafind__content-slider">
+							<div class="teafind__content-slider-line">
+								<div class="teafind__content-slider-slide">
+									<tea-card class='teafind__content-slider-slide-item'
+										name="Цзюцюй Хунмэй, Лунцзин Хунча Красная слива реки Девяти изгибов, 2023"
+										image='./src/assets/images/teas/teafind420.jpg' rating='./src/assets/images/teas/rating5.svg'
+										price='420.00 ₽  ' weight='за 50 грамм'>
+									</tea-card>
+								</div>
+								<div class="teafind__content-slider-slide">
+									<tea-card class='teafind__content-slider-slide-item'
+										name="Цзи Бянь Фэнсюэ Хун Юнь Мелодия снежного ливня, 2022 осень"
+										image='./src/assets/images/teas/teafind574.jpg' rating='./src/assets/images/teas/rating4.svg'
+										price='574.00 ₽' weight='за 50 грамм'>
+									</tea-card>
+								</div>
+								<div class="teafind__content-slider-slide">
+									<tea-card class='teafind__content-slider-slide-item'
+										name="Лушань Юньу “Облака и туман гор Лушань”, 2023 март"
+										image='./src/assets/images/teas/teafind730.jpg' rating='./src/assets/images/teas/rating4.svg'
+										price='730.00 ₽' weight='за 50 грамм'>
+									</tea-card>
+								</div>
+								<div class="teafind__content-slider-slide">
+									<tea-card class='teafind__content-slider-slide-item'
+										name="Цзюцюй Хунмэй, Лунцзин Хунча Красная слива реки Девяти изгибов, 2023"
+										image='./src/assets/images/teas/teafind420.jpg' rating='./src/assets/images/teas/rating5.svg'
+										price='420.00 ₽  ' weight='за 50 грамм'>
+									</tea-card>
+								</div>
+								<div class="teafind__content-slider-slide">
+									<tea-card class='teafind__content-slider-slide-item'
+										name="Цзюцюй Хунмэй, Лунцзин Хунча Красная слива реки Девяти изгибов, 2023"
+										image='./src/assets/images/teas/teafind420.jpg' rating='./src/assets/images/teas/rating5.svg'
+										price='420.00 ₽  ' weight='за 50 грамм'>
+									</tea-card>
+								</div>
+							</div>
+						</div>
+						<button class="teafind__slider-button-next"><img class='teafind__slider-button-icon'
+								src="./src/assets/icons/arrowBtnRight.svg" alt="#"></button>
+					</div>
+				</div>
+		</section>
+	</main>
+
 	<script type="module" src="/src/js/main.js"></script>
 	<script src="./src/js/index.js"></script>
 	<script src="./src/js/teacard.js"></script>
 	<script src="./src/js/slider.js"></script>
+	<script src="./src/js/popupComp.js"> </script>
 </body>
 
 </html>

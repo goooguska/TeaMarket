@@ -2,23 +2,28 @@ const template = document.createElement('template');
 template.innerHTML= `
 <style>
 .tea-card{
-	
+	text-decoration:none;
 	display:block;
 	width:215px;
 	padding:15px 20px;
 }
 p{
-	color:#000;
+	color: #303030;
+	
 }
+
+}
+
 </style>
-	<div class="tea-card">
+	<a href='' class="tea-card">
 	<img id='tea'/>
 	<img id='rating'/>
 	<p id='name'></p>
 	<p id='price'></p>
 	<p id='weight'></p>
 
-	</div>
+	</a>
+
 `
 class teaCard extends HTMLElement {
 	constructor(){

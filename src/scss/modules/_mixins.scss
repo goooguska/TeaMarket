@@ -15,3 +15,17 @@
 	padding: 16px 12px 16px 50px;
 
 }
+@mixin buttonMore{
+	@include fonts.text-bodyHero-buttonMore;
+	display: inline-block;
+	color: variables.$secondary-color ;
+	border-radius: 10px;
+	padding: 16px 45px; 
+	border: 1.5px solid variables.$secondary-color ;
+
+}
+@mixin buttonMoreHover{
+	color: variables.$oppacity-color ;
+	border: 1.5px solid variables.$oppacity-color ;
+	cursor: pointer;
+}
